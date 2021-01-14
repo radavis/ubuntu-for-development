@@ -1,0 +1,13 @@
+build-essential
+curl
+fonts-powerline
+fzf
+git
+hub
+libncurses-dev
+libncursesw5-dev
+make
+silversearcher-ag
+tree
+wget
+xclip

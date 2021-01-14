@@ -1,0 +1,7 @@
+{
+  "root": "./docs",
+  "styles": {
+    "website": "styles/website.css",
+    "epub": "styles/epub.css"
+  }
+}
