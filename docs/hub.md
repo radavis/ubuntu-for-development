@@ -14,7 +14,7 @@ Then, add the following to `~/.bashrc`
 
 ```bash
 HUB_VERSION=2.14.2
-PATH="$HOME/hub-linux-amd64-$HUB_VERSION/bin"
+PATH="$HOME/hub-linux-amd64-$HUB_VERSION/bin:$PATH"
 ```
 
 ## Create a GitHub Personal Access Token
@@ -30,6 +30,5 @@ Set the generated token to an environment variable `GITHUB_TOKEN=xyz` (where can
 ```bash
 $ hub --version
 $ tldr hub
-...
-$ hub browse radavis/ubuntu-for-development
+$ hub browse webgems/webgems
 ```

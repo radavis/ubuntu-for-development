@@ -1,5 +1,5 @@
 # Command Line Interface Basics
 
-![linux file commands](/assets/images/linux-command-reference-file-commands-fosswire.png)
+![linux file commands](assets/images/file-commands.png)
 
-[[pdf](/assets/documents/linux-command-reference-fosswire.pdf)]
+[[pdf](assets/documents/linux-command-reference-fosswire.pdf)]
