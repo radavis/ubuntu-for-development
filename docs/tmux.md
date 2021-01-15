@@ -21,7 +21,9 @@ Auto-load tmux when loading the terminal
 ```bash
 # autoload tmux - place at EOF (end-of-file) within ~/.bashrc
 # if shell is interactive, and TMUX var is set...
-[[ $- == *i* ]] && [[ -z "${TMUX}" ]] && { tmux attach || exec tmux new-session && exit; }
+if [[ $- == *i* ]] && [[ -z "${TMUX}" ]]; then
+  tmux attach || exec tmux new-session && exit;
+fi
 ```
 
 [source](https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux)

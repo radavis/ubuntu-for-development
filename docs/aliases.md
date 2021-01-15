@@ -11,3 +11,14 @@ alias push="git push origin HEAD"
 alias t="tree -L 1"
 alias x="exit"
 ```
+
+After making changes to `~/.bashrc` it is necessary to load the updated
+settings.
+
+```bash
+$ . ~/.bashrc
+# or
+$ source ~/.bashrc
+```
+
+Or, restart your terminal.

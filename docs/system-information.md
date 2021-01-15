@@ -1,4 +1,4 @@
-# System Information 
+# System Information
 
 The following commands show you how to extract useful information about your Operating System.
 
@@ -44,7 +44,3 @@ $ df -h
 ```bash
 $ service --status-all
 ```
-
-## Linux Command Reference
-
-[[pdf](/assets/documents/linux-command-reference-fosswire.pdf)]

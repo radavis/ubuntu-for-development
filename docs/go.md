@@ -1,6 +1,6 @@
 # go
 
-[[source](https://golang.org/doc/install)]
+> [Go is] a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
 
 ```bash
 $ GO_VERSION=1.15.6
@@ -15,3 +15,5 @@ Add the following to `~/.bashrc`
 GO_VERSION=1.15.6
 PATH="$PATH:$HOME/go-$GO_VERSION/go/bin"
 ```
+
+[[documentation](https://golang.org/doc/)]
