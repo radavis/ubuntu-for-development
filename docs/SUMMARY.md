@@ -1,3 +1,4 @@
+* [Intro](README.md)
 * [Boot from USB](boot-from-usb.md)
 * [Gnome](gnome.md)
 * [Terminal](terminal.md)
@@ -9,6 +10,7 @@
 * [docker](docker.md)
 * [fzf](fzf.md)
 * [go](go.md)
+* [printenv](printenv.md)
 * [hub](hub.md)
 * [java](java.md)
 * [nano](nano.md)

@@ -2,6 +2,8 @@
 
 VSCodium is VSCode stripped of Microsoft telemetry.
 
+## Install via apt
+
 ```bash
 $ wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | \
     gpg --dearmor | \
@@ -14,6 +16,16 @@ $ sudo apt install codium
 
 [[source](https://github.com/VSCodium/vscodium#vscodium)]
 
+## Install via dpkg
+
+Download `codium_$VERSION_amd64.deb`,
+[here](https://github.com/VSCodium/vscodium/releases).
+
+```
+$ cd ~/Downloads
+$ sudo dpkg -i codium_$VERSION_amd64.deb
+```
+
 ## Fix remapped CapsLock & Esc keys
 
 Edit `~/.config/VSCodium/User/settings.json`
@@ -23,3 +35,4 @@ Edit `~/.config/VSCodium/User/settings.json`
 ```
 
 [[source](https://github.com/Microsoft/vscode/issues/32037#issuecomment-322042146)]
+

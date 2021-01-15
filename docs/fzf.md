@@ -18,3 +18,16 @@ if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files --hidden'
 fi
 ```
+
+## nanoo
+
+Combine `nano` and `fzf` to easily find and edit files.
+
+```bash
+# ~/.bashrc
+
+nanoo() {
+  local filename=$(fzf)
+  [[ -f "$filename" ]] && nano "$filename"
+}
+```
