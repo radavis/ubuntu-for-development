@@ -7,7 +7,7 @@
     "build": "honkit build",
     "honkit": "honkit",
     "serve": "honkit serve",
-    "start": "npm run serve",
+    "start": "honkit serve --reload",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

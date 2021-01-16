@@ -3,6 +3,7 @@ curl
 fonts-powerline
 fzf
 git
+jq
 libncurses-dev
 libncursesw5-dev
 make
