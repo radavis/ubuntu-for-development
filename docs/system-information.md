@@ -44,3 +44,9 @@ $ df -h
 ```bash
 $ service --status-all
 ```
+
+## Show IP Addresses
+
+```bash
+$ ip addr show
+```
