@@ -21,4 +21,5 @@
 * [go](go.md)
 * [java](java.md)
 * [node](node.md)
+* [postgres](postgres.md)
 * [Outro](outro.md)
