@@ -30,3 +30,13 @@ $ touch ~/apt-packages.txt
 ```bash
 $ cat ~/apt-packages.txt | xargs sudo apt install -y
 ```
+
+## Create an alias
+
+```bash
+# ~/.bashrc
+alias apti="cat $HOME/packages.txt | xargs sudo apt install -y"
+```
+
+When you need to install one or more packages, add them to `~/apt-packages.txt`
+and run `apti`.
