@@ -10,8 +10,9 @@ determine the device name.
 
 Replace `/dev/sdX` with the name of the device.
 
-**Double** and **triple check** that you have the correct device name. The `dd`
-command is **destructive** and will overwrite all data on the specified device.
+**Double** and **triple check** that you have the correct device name. The
+**`dd` command is destructive** and will overwrite all data on the
+specified device.
 
 ```bash
 $ sudo fdisk -l
