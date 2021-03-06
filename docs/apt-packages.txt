@@ -8,6 +8,8 @@ libncurses-dev
 libncursesw5-dev
 make
 silversearcher-ag
+tar
+tldr
 tree
 wget
 xclip

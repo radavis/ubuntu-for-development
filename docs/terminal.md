@@ -2,10 +2,10 @@
 
 ## Open terminal in full screen mode
 
-1. Press Super, type 'keyboard', press Enter
+1. Press Super, type 'keyboard' or 'keyboard shortcuts', press Enter
 2. Add a new Custom Shortcut.
   - Title: "Full screen terminal"
-  - Command: `/usr/bin/gnome-terminal --window --full-screen`
+  - Command: `/usr/bin/gnome-terminal --full-screen`
 3. Assign a shortcut, such as `Ctrl+Alt+t`
 
 [[source](https://askubuntu.com/questions/142487/how-to-start-terminal-in-full-screen)]

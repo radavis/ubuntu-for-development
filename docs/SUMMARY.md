@@ -17,6 +17,8 @@
 * [vim](vim.md)
 * [Remap CapsLock](remap-capslock.md)
 * [VSCodium](vscodium.md)
+* [Shortcuts](shortcuts.md)
+* [Firefox](firefox.md)
 * [docker](docker.md)
 * [elixir](elixir.md)
 * [go](go.md)
