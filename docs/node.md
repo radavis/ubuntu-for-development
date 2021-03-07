@@ -23,4 +23,11 @@ $ chmod +x n
 $ n lts
 ```
 
+Install `yarn`
+
+```bash
+$ n auto
+$ npm install --global yarn
+```
+
 [[source](https://github.com/tj/n#specifying-node-versions)]

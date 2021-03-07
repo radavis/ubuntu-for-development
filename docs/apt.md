@@ -35,7 +35,7 @@ $ cat ~/apt-packages.txt | xargs sudo apt install -y
 
 ```bash
 # ~/.bashrc
-alias apti="cat $HOME/packages.txt | xargs sudo apt install -y"
+alias apti="cat $HOME/apt-packages.txt | xargs sudo apt install -y"
 ```
 
 When you need to install one or more packages, add them to `~/apt-packages.txt`

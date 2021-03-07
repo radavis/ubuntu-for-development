@@ -4,7 +4,7 @@ install postgres, make yourself a superuser, and create your root database.
 
 ```bash
 $ sudo apt update
-$ sudo apt install postgresql postgresql-contrib
+$ sudo apt install postgresql postgresql-contrib libpq-dev
 $ whoami  # take note of your username
 $ sudo -u postgres createuser --interactive
 Enter name of role to add: <your-username>
