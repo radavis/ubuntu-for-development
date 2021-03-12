@@ -17,6 +17,7 @@ set -g mouse on
 ```
 
 Auto-load tmux when loading the terminal
+[[source](https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux)]
 
 ```bash
 # autoload tmux - place at EOF (end-of-file) within ~/.bashrc
@@ -26,4 +27,13 @@ if [[ $- == *i* ]] && [[ -z "${TMUX}" ]]; then
 fi
 ```
 
-[source](https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux)
+Persist tmux sessions between system restarts
+[[source](https://andrewjamesjohnson.com/restoring-tmux-sessions/)]
+
+```bash
+# ~/.tmux.conf.local
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+set -g @continuum-restore 'on'
+```
