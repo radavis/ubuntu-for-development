@@ -20,6 +20,8 @@ To see the options available for configuration, take a look at the manual:
 ```
 # ~/.nanorc
 
+set atblanks
+set autoindent
 set guidestripe 80
 set linenumbers
 #set mouse
