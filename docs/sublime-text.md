@@ -12,6 +12,14 @@ $ which subl
 $ subl .  # open current folder
 ```
 
+`Preferences -> Settings` and update the following user settings:
+
+```
+"tab_size": 2,
+"translate_tabs_to_spaces": true,
+"ensure_newline_at_eof_on_save": true
+```
+
 Add package control: `Shift + Ctrl + P`, type: `Install Package Control`, then: `Enter`.
 
 [https://packagecontrol.io/installation](https://packagecontrol.io/installation)
