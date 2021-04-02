@@ -3,13 +3,13 @@
 Install the latest version of the `nano` text editor.
 
 ```bash
-$ NANO_VERSION=5.4
+$ NANO_VERSION=5.6.1
 $ curl -O https://nano-editor.org/dist/v5/nano-$NANO_VERSION.tar.gz
 $ tar -zxvf nano-$NANO_VERSION.tar.gz
 $ cd nano-$NANO_VERSION
 $ ./configure
 $ make
-$ make install
+$ sudo make install
 ```
 
 ## Configuration
@@ -39,6 +39,7 @@ The configuration files at
 adds syntax highlighting for many languages.
 
 ```bash
+$ cd ~
 $ git clone git@github.com:scopatz/nanorc
 # or
 $ hub clone scopatz/nanorc

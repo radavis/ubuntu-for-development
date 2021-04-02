@@ -5,6 +5,7 @@ View a short description of bash commands with examples.
 ## Usage
 
 ```bash
+$ tldr --update
 $ tldr tar
 $ tldr apt
 ```

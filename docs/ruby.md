@@ -1,6 +1,6 @@
 # ruby
 
-install `rbenv` to manage ruby versions
+Install `rbenv` to manage ruby versions.
 
 ```bash
 $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -17,14 +17,14 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 ```
 
-install the `ruby-build` plugin
+Install the `ruby-build` plugin.
 
 ```bash
 $ mkdir -p "$(rbenv root)"/plugins
 $ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 ```
 
-add the `rbenv-doctor` script
+Add the `rbenv-doctor` script.
 
 ```bash
 $ curl -L https://raw.githubusercontent.com/rbenv/rbenv-installer/master/bin/rbenv-doctor \
@@ -32,7 +32,7 @@ $ curl -L https://raw.githubusercontent.com/rbenv/rbenv-installer/master/bin/rbe
 $ chmod +x ~/.rbenv/bin/rbenv-doctor
 ```
 
-install one or more ruby versions
+Install one or more ruby versions.
 
 ```bash
 $ source ~/.bashrc # or reload your terminal
@@ -42,7 +42,7 @@ $ rbenv local 2.7.2
 $ gem install bundler # see bundler.io/gemfile.html
 ```
 
-create a new ruby (on rails) project
+Create a new ruby (on rails) project.
 
 ```bash
 $ mkdir new-ruby-project && cd $_
