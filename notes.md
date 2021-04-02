@@ -22,7 +22,8 @@ see https://github.com/radavis/ubuntu-for-development/settings
 $ git checkout gh-pages
 $ git merge main
 $ npm run build
-$ mv _build docs
+$ rm -rf docs
+$ mv _book docs
 $ git add .
 $ git commit -m 'published on 20210331'
 $ git push origin HEAD
