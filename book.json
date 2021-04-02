@@ -4,7 +4,7 @@
   "description": "How to get a development environment up and running on Ubuntu",
   "author": "Richard Davis <rdavis.bacs@gmail.com>",
   "language": "en",
-  "root": "./docs",
+  "root": "./src",
   "plugins": [
     "gitbook-plugin-include-codeblock",
     "gitbook-plugin-ace"
