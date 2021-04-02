@@ -14,7 +14,9 @@ view honkit cli help
 $ npm run honkit help
 ```
 
-publish to github pages
+publish to github pages. the github repo is configured to serve the `docs`
+folder within the `gh-pages` branch.
+see https://github.com/radavis/ubuntu-for-development/settings
 
 ```bash
 $ git checkout gh-pages
