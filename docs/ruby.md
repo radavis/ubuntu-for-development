@@ -32,11 +32,13 @@ $ curl -L https://raw.githubusercontent.com/rbenv/rbenv-installer/master/bin/rbe
 $ chmod +x ~/.rbenv/bin/rbenv-doctor
 ```
 
-Install one or more ruby versions.
+Build and install one or more ruby versions.
 
 ```bash
 $ source ~/.bashrc # or reload your terminal
-$ rbenv install 2.7.2
+$ sudo apt install libssl-dev # necessary for the Ruby OpenSSL wrapper lib
+$ sudo apt install zlib1g-dev # necessary for the Ruby interface for zlib compression
+$ rbenv install --verbose 2.7.2
 $ rbenv install 3.0.0
 $ rbenv local 2.7.2
 $ gem install bundler # see bundler.io/gemfile.html
@@ -45,7 +47,7 @@ $ gem install bundler # see bundler.io/gemfile.html
 Create a new ruby (on rails) project.
 
 ```bash
-$ mkdir new-ruby-project && cd $_
+$ mkdir new-rails-project && cd $_
 $ echo "2.7.2" > .ruby-version
 $ bundle init # gives you a Gemfile
 ```
@@ -58,10 +60,10 @@ gem "rails", "~> 6.1.0"
 
 ```bash
 $ bundle install
-$ rails new --help
-$ rails new . \
+$ bundle exec rails new --help
+$ bundle exec rails new . \
     --database=postgresql
-$ rake db:create
-$ rake db:migrate
-$ rails server
+$ bundle exec rake db:create
+$ bundle exec rake db:migrate
+$ bundle exec rails server
 ```

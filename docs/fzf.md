@@ -29,5 +29,8 @@ Combine `nano` and `fzf` to easily find and edit files.
 nanoo() {
   local filename=$(fzf)
   [[ -f "$filename" ]] && nano "$filename"
+  local bold=$'\e[1m'
+  local end=$'\e[0m'
+  printf "Exited editing %s\n" "${bold}${filename}${end}"
 }
 ```

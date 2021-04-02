@@ -26,4 +26,5 @@
 * [postgres](postgres.md)
 * [ruby](ruby.md)
 * [virtualbox](virtualbox.md)
+* [exercism](exercism.md)
 * [Outro](outro.md)
