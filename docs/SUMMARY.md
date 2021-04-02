@@ -18,6 +18,7 @@
 * [vim](vim.md)
 * [Remap CapsLock](remap-capslock.md)
 * [VSCodium](vscodium.md)
+* [Sublime Text](sublime-text.md)
 * [docker](docker.md)
 * [elixir](elixir.md)
 * [go](go.md)

@@ -1,5 +1,9 @@
 # sublime-text
 
+Sublime Text is an excellent, low-memory text editor. I tend to switch over to
+the rock-solid stable Sublime Text when VS Code or Atom start acting funky
+after an auto-update.
+
 [source](https://www.sublimetext.com/docs/3/linux_repositories.html)
 
 ```bash
