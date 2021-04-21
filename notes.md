@@ -26,5 +26,5 @@ $ rm -rf docs
 $ mv _book docs
 $ git add .
 $ git commit -m 'published on 20210331'
-$ git push origin HEAD
+$ git push origin gh-pages
 ```
