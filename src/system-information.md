@@ -2,6 +2,12 @@
 
 The following commands show you how to extract useful information about your Operating System.
 
+Get System Hardware Information
+
+```bash
+$ inxi --basic
+```
+
 Get OS Version
 
 ```bash

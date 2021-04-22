@@ -19,18 +19,26 @@ if type rg &> /dev/null; then
 fi
 ```
 
-## nanoo
+# editfile
 
 Combine `nano` and `fzf` to easily find and edit files.
 
-```bash
+```
 # ~/.bashrc
 
-nanoo() {
-  local filename=$(fzf)
-  [[ -f "$filename" ]] && nano "$filename"
-  local bold=$'\e[1m'
-  local end=$'\e[0m'
-  printf "Exited editing %s\n" "${bold}${filename}${end}"
+editfile() {
+  if [[ -f "$@" ]]; then
+    local filename="$@"
+  else
+    local filename=$(fzf)
+  fi
+
+  if [[ -f "$filename" ]]; then
+    "${EDITOR}" "$filename"
+    local bold=$'\e[1m'
+    local end=$'\e[0m'
+    printf "Exited editing %s\n" "${bold}${filename}${end}"
+  fi
 }
+alias ef="editfile"
 ```

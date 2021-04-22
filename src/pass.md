@@ -73,3 +73,7 @@ Import a key
 ```bash
 $ gpg --import /path/to/key
 ```
+
+It may be necessary to
+[set the trust level of the keys](https://stackoverflow.com/a/34132924/2675670),
+after importing.
