@@ -28,7 +28,7 @@ Add package control: `Shift + Ctrl + P`, type: `Install Package Control`, then: 
 
 [https://packagecontrol.io/installation](https://packagecontrol.io/installation)
 
-A few, recommended packages:
+A few recommended packages:
 
 - Agila Theme
 - EditorConfig

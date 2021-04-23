@@ -38,17 +38,18 @@ Build and install one or more ruby versions.
 $ source ~/.bashrc # or reload your terminal
 $ sudo apt install libssl-dev # necessary for the Ruby OpenSSL wrapper lib
 $ sudo apt install zlib1g-dev # necessary for the Ruby interface for zlib compression
-$ rbenv install --verbose 2.7.2
-$ rbenv install 3.0.0
-$ rbenv local 2.7.2
-$ gem install bundler # see bundler.io/gemfile.html
+$ rbenv install --verbose 2.7.3
+$ nproc # determine number of cpu cores
+$ MAKE_OPTS="-j 3" rbenv install 3.0.1 # use multiple cores when building (one less than nproc output)
 ```
 
 Create a new ruby (on rails) project.
 
 ```bash
 $ mkdir new-rails-project && cd $_
-$ echo "2.7.2" > .ruby-version
+$ rbenv local 2.7.3
+$ gem install bundler # see bundler.io/gemfile.html
+$ bundle config --global jobs 3 # use multiple cores when bundling
 $ bundle init # gives you a Gemfile
 ```
 

@@ -14,7 +14,7 @@ $ sudo dpkg -i codium_$VERSION_amd64.deb
 
 ## Fix remapped CapsLock & Esc keys
 
-Edit `~/.config/VSCodium/User/settings.json`
+Edit `~/.config/VSCodium/${USER}/settings.json`
 
 ```
 "keyboard.dispatch": "keyCode"

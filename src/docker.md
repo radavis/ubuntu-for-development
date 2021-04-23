@@ -21,7 +21,7 @@ So you don't have to `sudo docker` all the time.
 
 ```bash
 $ sudo usermod -aG docker ${USER}
-# logout, then login
+# then, reboot
 $ id -nG
 ```
 

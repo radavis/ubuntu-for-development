@@ -23,7 +23,7 @@ fi
 
 Combine `nano` and `fzf` to easily find and edit files.
 
-```
+```bash
 # ~/.bashrc
 
 editfile() {
