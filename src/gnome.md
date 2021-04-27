@@ -20,11 +20,11 @@ $ sudo apt install gnome-tweak-tool chrome-gnome-shell
 
 Visit https://extensions.gnome.org/local/ and install the browser extension.
 
-## A Selection of Extensions
+## A Selection of Useful Extensions
 
 * [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
-* [GSConnect](https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki)
-* [Sound IO Device Chooser](https://github.com/kgshank/gse-sound-output-device-chooser)
-* [OpenWeather](https://gitlab.com/jenslody/gnome-shell-extension-openweather)
+* [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
+* [Sound IO Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+* [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
 * [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
-* [Put Windows](https://github.com/negesti/gnome-shell-extensions-negesti)
+* [Put Windows](https://extensions.gnome.org/extension/39/put-windows/)

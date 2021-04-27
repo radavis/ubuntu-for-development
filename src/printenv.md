@@ -1,20 +1,26 @@
 # printenv
 
-The `printenv` command shows us the variables (key, value pairs) stored in our
-working shell environment.
+The `printenv` command shows us the variables, and their values, that are 
+stored in our working shell environment.
 
 ```bash
 $ tldr printenv
 $ printenv | grep ^USER
 $ printenv | grep ^SHELL
+```
+
+Get the value of a variable
+
+```bash
 $ echo "$SHELL"
+$ echo "$EDITOR"
 ```
 
 ## API keys
 
 When working with a Web API, it's good practice to keep your API key separate
-from your code. By storing these values in your environment, you can keep
-this API key secret and safe.
+from your code. By storing these values in your environment, you can define
+this API key ouside of your code, and still easily access its value.
 
 First, store the key-value pair in a file.
 
@@ -30,18 +36,19 @@ environment.
 ```bash
 $ source ~/.env_vars # or
 $ . ~/.env_vars
-$ curl https://api.themoviedb.org/3/movie/550?api_key=$TMDB_API_KEY
+$ curl https://api.themoviedb.org/3/movie/615643?api_key=$TMDB_API_KEY
 ```
 
 Pretty-print the output with `jq`
 
 ```bash
-$ curl https://api.themoviedb.org/3/movie/550?api_key=$TMDB_API_KEY | jq
+$ curl https://api.themoviedb.org/3/movie/615643?api_key=$TMDB_API_KEY | jq
 ```
 
 ## Load Environment Variables
 
-`source ~/.env_vars` from `~/.bashrc`
+Load the variables stored in `~/.env_vars` when starting the terminal,
+before reaching the bash prompt.
 
 ```bash
 # ~/.bashrc
