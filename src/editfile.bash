@@ -7,27 +7,26 @@ if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files --hidden'
 fi
 
-# convience function for finding, creating, and editing files
+# ef - convience function for finding, creating, and editing files
 editfile() {
   local bold=$'\e[1m'
   local end=$'\e[0m'
 
   if [[ "$#" -eq 0 ]]; then # zero arguments, prompt w/ fzf
     local filename=$(fzf)
-  else
+    [[ -z "$filename" ]] && return -1 # quit when no file selected
+  else # filename provided via arguments
     local filename="$@"
   fi
 
-  if [[ ! -f "$filename" ]]; then # filename does not exist, prompt to create
+  if [[ ! -f "$filename" ]]; then # file does not exist, prompt to create
     printf "Create and edit file %s? [Y/n]: " "${bold}${filename}${end}"
     read -n 1 -r response
     printf "\n"
-    if [[ "$response" =~ ^[Yy]$ ]]; then
-      touch "$filename"
-    fi
+    [[ "$response" =~ ^[Yy]$ ]] && touch "$filename"
   fi
 
-  if [[ -f "$filename" ]]; then # filename exists, open with $EDITOR
+  if [[ -f "$filename" ]]; then # file exists, open with $EDITOR
     "${EDITOR}" "$filename"
     printf "Exited editing %s\n" "${bold}${filename}${end}"
   fi
