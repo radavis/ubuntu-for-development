@@ -2,10 +2,22 @@
 
 View a short description of bash commands with examples.
 
+## Install
+
+Install the tldr bash client. [[repo](https://gitlab.com/pepa65/tldr-bash-client)]
+
+```bash
+# add `PATH="$HOME/.local/bin:$PATH"` to `~/.bashrc`
+$ mkdir -p ~/.local/bin
+$ cd ~/.local/bin
+$ curl -OL https://4e4.win/tldr
+$ chmod +x tldr
+```
+
 ## Usage
 
 ```bash
-$ tldr --update
+$ tldr --help
 $ tldr tar
 $ tldr apt
 ```

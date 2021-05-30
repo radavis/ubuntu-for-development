@@ -2,16 +2,6 @@
 
 Gnome is the default Desktop Environment in Ubuntu.
 
-## Disable the Touchpad tap-and-drag feature
-
-`tap-and-drag` doesn't work very well when `tap-to-click` is enabled.
-
-```bash
-$ gsettings set org.gnome.desktop.peripherals.touchpad tap-and-drag false
-```
-
-[[source](https://askubuntu.com/a/1095432/917817)]
-
 ## Install Gnome Tweak Tool and shell integration
 
 ```
@@ -28,3 +18,15 @@ Visit https://extensions.gnome.org/local/ and install the browser extension.
 * [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
 * [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 * [Put Windows](https://extensions.gnome.org/extension/39/put-windows/)
+
+## Optionally, disable the Touchpad tap-and-drag feature
+
+`tap-and-drag` doesn't work very well when `tap-to-click` is enabled.
+
+```bash
+$ gsettings set org.gnome.desktop.peripherals.touchpad tap-and-drag false
+```
+
+[[source](https://askubuntu.com/a/1095432/917817)]
+
+

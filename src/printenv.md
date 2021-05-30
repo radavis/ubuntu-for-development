@@ -26,7 +26,6 @@ First, store the key-value pair in a file.
 
 ```bash
 # ~/.env_vars
-
 export TMDB_API_KEY=tmdb-api-key-value
 ```
 

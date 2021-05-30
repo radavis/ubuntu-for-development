@@ -3,9 +3,6 @@
 if type ag &> /dev/null; then
   export FZF_DEFAULT_COMMAND='ag -p ~/.gitignore -g ""'
 fi
-if type rg &> /dev/null; then
-  export FZF_DEFAULT_COMMAND='rg --files --hidden'
-fi
 
 # ef - convience function for finding, creating, and editing files
 editfile() {

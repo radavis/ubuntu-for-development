@@ -22,21 +22,21 @@ $ apt list --installed | grep --invert-match automatic
 I find it helpful to maintain a plain-text file of packages I regularly use.
 
 ```bash
-$ touch ~/apt-packages.txt
+$ touch ~/Aptfile
 ```
 
-[import](./apt-packages.txt)
+[import](./Aptfile)
 
 ```bash
-$ cat ~/apt-packages.txt | xargs sudo apt install -y
+$ cat ~/Aptfile | xargs sudo apt install -y
 ```
 
 ## Create an alias
 
 ```bash
 # ~/.bashrc
-alias apti="cat $HOME/apt-packages.txt | xargs sudo apt install -y"
+alias apti="cat $HOME/Aptfile | xargs sudo apt install -y"
 ```
 
-When you need to install one or more packages, add them to `~/apt-packages.txt`
+When you need to install one or more packages, add them to `~/Aptfile`
 and run `apti`.

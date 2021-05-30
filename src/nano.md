@@ -3,7 +3,7 @@
 Install the latest version of the `nano` text editor.
 
 ```bash
-$ NANO_VERSION=5.6.1
+$ NANO_VERSION=5.7
 $ curl -O https://nano-editor.org/dist/v5/nano-$NANO_VERSION.tar.gz
 $ tar -zxvf nano-$NANO_VERSION.tar.gz
 $ cd nano-$NANO_VERSION
@@ -19,7 +19,6 @@ To see the options available for configuration, take a look at the manual:
 
 ```
 # ~/.nanorc
-
 set atblanks
 set autoindent
 set guidestripe 80
@@ -47,6 +46,5 @@ $ hub clone scopatz/nanorc
 
 ```
 # ~/.nanorc
-
 include ~/nanorc/*.nanorc
 ```

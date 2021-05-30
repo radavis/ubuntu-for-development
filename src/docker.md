@@ -2,9 +2,11 @@
 
 ## Install docker-ce and docker-compose
 
+[[source](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)]
+
 ```bash
-$ sudo apt update
-$ sudo apt install apt-transport-https ca-certificates curl software-properties-common
+# you probably have all these dependencies, already
+# sudo apt install apt-transport-https ca-certificates curl software-properties-common
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 $ source /etc/os-release
 $ echo "$VERSION_CODENAME"
@@ -30,5 +32,3 @@ $ id -nG
 ```bash
 $ docker run hello-world
 ```
-
-[[source](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)]

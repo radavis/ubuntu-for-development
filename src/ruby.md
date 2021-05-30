@@ -1,54 +1,22 @@
 # ruby
 
-Install `rbenv` to manage ruby versions.
+Install `ruby` via asdf.
 
 ```bash
-$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-$ cd ~/.rbenv
-$ ./src/configure
-$ make -C src
-```
-
-```bash
-~/.bashrc
-
-# rbenv - manages ruby versions
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-```
-
-Install the `ruby-build` plugin.
-
-```bash
-$ mkdir -p "$(rbenv root)"/plugins
-$ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-```
-
-Add the `rbenv-doctor` script.
-
-```bash
-$ curl -L https://raw.githubusercontent.com/rbenv/rbenv-installer/master/bin/rbenv-doctor \
-    -o ~/.rbenv/bin/rbenv-doctor
-$ chmod +x ~/.rbenv/bin/rbenv-doctor
-```
-
-Build and install one or more ruby versions.
-
-```bash
-$ source ~/.bashrc # or reload your terminal
-$ sudo apt install libssl-dev # necessary for the Ruby OpenSSL wrapper lib
-$ sudo apt install zlib1g-dev # necessary for the Ruby interface for zlib compression
-$ rbenv install --verbose 2.7.3
-$ nproc # determine number of cpu cores
-$ MAKE_OPTS="-j 3" rbenv install 3.0.1 # use multiple cores when building (one less than nproc output)
+$ asdf plugin add ruby
+$ asdf install ruby latest
 ```
 
 Create a new ruby (on rails) project.
 
 ```bash
 $ mkdir new-rails-project && cd $_
-$ rbenv local 2.7.3
-$ gem install bundler # see bundler.io/gemfile.html
+# define language and tool versions
+$ asdf local ruby latest
+$ asdf local nodejs latest
+$ asdf local yarn latest
+# see bundler.io/gemfile.html
+$ gem install bundler
 $ bundle config --global jobs 3 # use multiple cores when bundling
 $ bundle init # gives you a Gemfile
 ```
@@ -62,9 +30,15 @@ gem "rails", "~> 6.1.0"
 ```bash
 $ bundle install
 $ bundle exec rails new --help
-$ bundle exec rails new . \
-    --database=postgresql
+$ bundle exec rails new . --database=postgresql # and overwrite the Gemfile
 $ bundle exec rake db:create
 $ bundle exec rake db:migrate
+$ bundle exec rails webpacker:install
 $ bundle exec rails server
 ```
+
+Open [https://localhost:3000/](http://localhost:3000) in a browser.
+
+See the [Rails Guides](https://guides.rubyonrails.org/) for taking this example
+further.
+
