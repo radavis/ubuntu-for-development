@@ -1,34 +1,39 @@
 # docker
 
-## Install docker-ce and docker-compose
-
-[[source](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)]
+install docker-ce, start the docker service
 
 ```bash
-# you probably have all these dependencies, already
-# sudo apt install apt-transport-https ca-certificates curl software-properties-common
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-$ source /etc/os-release
-$ echo "$VERSION_CODENAME"
-$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $VERSION_CODENAME stable"
-$ sudo apt update
-$ apt-cache policy docker-ce
-$ sudo apt install docker-ce docker-compose
-$ sudo systemctl status docker
+$ curl https://get.docker.com | sh
+$ sudo systemctl --now enable docker
 ```
 
-## Add `${USER}` to the `docker` group
-
-So you don't have to `sudo docker` all the time.
+add `$USER` to the `docker` group, and verify the installation
 
 ```bash
-$ sudo usermod -aG docker ${USER}
-# then, reboot
-$ id -nG
-```
-
-## Verify
-
-```bash
+$ sudo usermod -aG docker $USER
+$ newgrp docker
+$ nano nano ~/.docker/config.json # set 'currentContext' to 'default'
 $ docker run hello-world
 ```
+
+install docker-compose
+
+```bash
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
+$ docker-compose --version
+```
+
+why not try out wordpress development? 🤷‍♂️
+
+**`filename:`** `docker-compose.yml`
+[import](./docker-compose.yml)
+
+```bash
+$ docker-compose up # then open localhost:8080 in a browser
+```
+
+peruse some of the example uses of docker created by the open-source community
+
+- https://docs.docker.com/samples/#sample-applications
+- https://github.com/docker/awesome-compose#readme
