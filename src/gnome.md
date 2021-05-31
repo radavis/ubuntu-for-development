@@ -19,9 +19,10 @@ Visit https://extensions.gnome.org/local/ and install the browser extension.
 * [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 * [Put Windows](https://extensions.gnome.org/extension/39/put-windows/)
 
-## Optionally, disable the Touchpad tap-and-drag feature
+## Disable the Touchpad tap-and-drag feature
 
-`tap-and-drag` doesn't work very well when `tap-to-click` is enabled.
+When using a laptop touchpad, `tap-and-drag` doesn't work very well when
+`tap-to-click` is enabled.
 
 ```bash
 $ gsettings set org.gnome.desktop.peripherals.touchpad tap-and-drag false

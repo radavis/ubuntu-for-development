@@ -13,9 +13,9 @@ in the `README` file.
 OSH_THEME="powerline"
 ```
 
-## Optionally, create a shortcut to open `gnome-terminal` in full screen mode
+## Create a shortcut to open `gnome-terminal` in full screen mode
 
-This is a configuration setting that's useful on a laptop.
+This configuration setting is useful on a laptop.
 
 1. Press Super, type 'keyboard' or 'keyboard shortcuts', press Enter
 2. Add a new Custom Shortcut.

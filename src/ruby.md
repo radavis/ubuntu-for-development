@@ -17,7 +17,7 @@ $ asdf local nodejs latest
 $ asdf local yarn latest
 # see bundler.io/gemfile.html
 $ gem install bundler
-$ bundle config --global jobs 3 # use multiple cores when bundling
+$ bundle config --global jobs 3 # utilize multiple cores when bundling
 $ bundle init # gives you a Gemfile
 ```
 
