@@ -1,0 +1,13 @@
+build-essential
+chrome-gnome-shell
+curl
+fonts-powerline
+fzf
+git
+gnome-tweak-tool
+jq
+libncurses-dev
+silversearcher-ag
+tree
+wget
+xclip

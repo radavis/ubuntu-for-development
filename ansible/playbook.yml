@@ -1,0 +1,151 @@
+---
+- hosts: all
+
+  vars:
+    apt_packages: "{{ lookup('file', 'Aptfile').splitlines() }}"
+    home: "{{ lookup('env', 'HOME') }}"
+    hub_version: 2.14.2
+    nano_version: 5.7
+    vscodium_version: 1.56.2
+
+  tasks:
+    - name: Install apt packages
+      become: yes
+      apt:
+        name: "{{ apt_packages }}"
+        state: latest
+        update_cache: yes
+        cache_valid_time: "{{ '60 * 60 * 2' | int }}"
+
+    - name: Clone "ohmybash/oh-my-bash"
+      ansible.builtin.git:
+        repo: https://github.com/ohmybash/oh-my-bash
+        dest: "{{ home }}/.oh-my-bash"
+        single_branch: yes
+        version: master
+
+    - name: Backup "~/.bashrc"
+      ansible.builtin.file:
+        path: "{{ home }}/.bashrc"
+        dest: "{{ home }}/.bashrc.backup"
+        state: file
+
+    - name: Copy "~/.oh-my-bash/templates/bashrc.osh-template"
+      ansible.builtin.file:
+        path: "{{ home }}/.oh-my-bash/templates/bashrc.osh-template"
+        dest: "{{ home }}/.bashrc"
+        state: file
+
+    - name: Use "powerline" oh-my-bash theme
+      lineinfile:
+        path: "{{ home }}/.bashrc"
+        regexp: ^OSH_THEME
+        line: "OSH_THEME=powerline"
+        state: present
+
+    - name: Create "~/.local/bin"
+      ansible.builtin.file:
+        path: "{{ home }}/.local/bin"
+        state: directory
+
+    - name: Add "~/.local/bin" to $PATH
+      blockinfile:
+        path: "{{ home }}/.bashrc"
+        block: |
+          PATH="$HOME/.local/bin:$PATH"
+
+    - name: Install "pepa65/tldr-bash-client" in "~/.local/bin"
+      get_url:
+        url: https://gitlab.com/pepa65/tldr-bash-client/-/raw/master/tldr
+        dest: "{{ home }}/.local/bin/tldr"
+        mode: a+x
+
+    - name: Install tmux
+      apt:
+        name: tmux
+        state: latest
+
+    - name: Clone "gpakosz/.tmux"
+      ansible.builtin.git:
+        repo: https://github.com/gpakosz/.tmux
+        dest: "{{ home }}/.tmux"
+        single_branch: yes
+        version: master
+
+    - name: Create symlink to "~/.tmux/.tmux.conf
+      ansible.builtin.file:
+        src: "{{ home }}/.tmux/.tmux.conf"
+        dest: "{{ home }}/.tmux.conf"
+        state: link
+
+    - name: Copy "~/.tmux/.tmux.conf.local"
+      ansible.builtin.file:
+        src: "{{ home }}/.tmux/.tmux.conf.local"
+        dest: "{{ home }}/.tmux.conf.local"
+        state: hard
+
+    - name: Update tmux configuration
+      lineinfile:
+        path: "{{ home }}/.tmux.conf.local"
+        regexp: "{{ item.from }}"
+        line: "{{ item.to }}"
+        state: present
+      with_items:
+        - { from: "#tmux_conf_copy_to_os_clipboard=true", to: "tmux_conf_copy_to_os_clipboard=true" }
+        - { from: "#set -g mouse on", to: "set -g mouse on" }
+        - { from: "#set -g @plugin 'tmux-plugins/tmux-resurrect'", to: "set -g @plugin 'tmux-plugins/tmux-resurrect'" }
+        - { from: "#set -g @plugin 'tmux-plugins/tmux-continuum'", to: "set -g @plugin 'tmux-plugins/tmux-continuum'" }
+        - { from: "#set -g @continuum-restore 'on'", to: "set -g @continuum-restore 'on'" }
+
+    - name: Autoload tmux with bash
+      blockinfile:
+        path: "{{ home }}/.bashrc"
+        block: |
+          if [[ $- == *i* ]] && [[ -z "${TMUX}" ]]; then
+            tmux attach || exec tmux new-session && exit;
+          fi
+
+    - name: Autoload "~/.env_vars"
+      blockinfile:
+        path: "{{ home }}/.bashrc"
+        block: |
+          ENV_VAR_FILE=$HOME/.env_vars
+          if [[ -f "$ENV_VAR_FILE" ]]; then
+            source "$ENV_VAR_FILE"
+          fi
+
+    - name: Download and extract hub
+      ansible.builtin.unarchive:
+        src: "https://github.com/github/hub/releases/download/v{{ hub_version }}/hub-linux-amd64-{{ hub_version }}.tgz"
+        dest: "{{ home }}"
+        remote_src: yes
+
+    - name: Add hub to $PATH
+      blockinfile:
+        path: "{{ home }}/.bashrc"
+        block: |
+          PATH="$HOME/hub-linux-amd64-{{ hub_version }}/bin:$PATH"
+
+    - name: Download and extract nano
+      ansible.builtin.unarchive:
+        src: "https://nano-editor.org/dist/v5/nano-{{ nano_version }}.tar.gz"
+        dest: "{{ home }}"
+        remote_src: yes
+
+    - name: Configure and make nano
+      shell: "cd {{ home }}/nano-{{ nano_version }} && ./configure && make"
+
+    - name: Install nano
+      become: yes
+      command: sudo make install chdir={{ home }}/nano-{{ nano_version }}
+
+    - name: Clone "scopatz/nanorc"
+      ansible.builtin.git:
+        repo: https://github.com/scopatz/nanorc
+        dest: "{{ home }}/nanorc"
+        single_branch: yes
+        version: master
+
+    - name: Install VSCodium
+      apt:
+        deb: https://github.com/VSCodium/vscodium/releases/download/1.56.2/codium_1.56.2-1620951495_amd64.deb
