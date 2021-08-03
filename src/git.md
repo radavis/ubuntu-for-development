@@ -5,6 +5,7 @@ Tell `git` who you are.
 ```bash
 $ git config --global user.name "Ash Williams"
 $ git config --global user.email "ash@s-mart.biz"
+$ git config --global init.defaultBranch "main"
 ```
 
 [[source](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)]

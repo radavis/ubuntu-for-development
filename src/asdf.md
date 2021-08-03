@@ -21,11 +21,9 @@ source $HOME/.asdf/completions/asdf.bash
 
 ```bash
 $ asdf plugin add nodejs
-$ asdf install nodejs 16.2.0
-$ asdf install nodejs 14.17.0
-$ asdf plugin add yarn
-$ asdf install yarn latest
-...
+$ asdf install nodejs latest
+$ asdf global nodejs latest
+$ node --version
 ```
 
 Read how to
