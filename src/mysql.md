@@ -1,8 +1,9 @@
-# MySQL
+# MySQL/MariaDB
 
 ```bash
 $ apt update
-$ apt install mariadb-server
+$ apt install mariadb-server libmariadb-dev
+$ sudo mysql_secure_installation
 ```
 
 To install other releases of mariadb:

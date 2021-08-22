@@ -24,6 +24,7 @@
 * [elixir](elixir.md)
 * [docker](docker.md)
 * [postgres](postgres.md)
+* [mysql](mysql.md)
 * [virtualbox](virtualbox.md)
 * [exercism](exercism.md)
 * [Outro](outro.md)
