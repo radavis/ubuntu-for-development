@@ -23,6 +23,11 @@ editfile() {
     [[ "$response" =~ ^[Yy]$ ]] && touch "$filename"
   fi
 
+  if [[ -z $EDITOR ]]; then
+    printf "Please set the ${bold}\$EDITOR${end} variable and try again.\n"
+    return 1
+  fi
+
   if [[ -f "$filename" ]]; then # file exists, open with $EDITOR
     "${EDITOR}" "$filename"
     printf "Exited editing %s\n" "${bold}${filename}${end}"
