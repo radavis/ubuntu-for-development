@@ -1,6 +1,9 @@
 # Create a Bootable USB
 
-Follow one of the official tutorials for
+[Download](https://ubuntu.com/download/desktop) an Ubuntu release in the `*.iso`
+file format.
+
+Then, follow one of the official tutorials for
 [creating a bootable usb](https://ubuntu.com/tutorials?q=bootable+usb).
 
 ## Create Bootable USB from ISO from the Linux CLI
