@@ -4,6 +4,7 @@ fonts-powerline
 fzf
 git
 jq
+libffi-dev
 libncurses-dev
 silversearcher-ag
 tree
