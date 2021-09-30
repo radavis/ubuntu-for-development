@@ -41,3 +41,13 @@ Create and edit `/.config/VSCodium/product.json`
 ```
 
 [[source](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions--marketplace)]
+
+## Editor Settings
+
+```
+{
+  "editor.minimap.enabled": false,
+  "editor.rulers": [80],
+  "files.trimTrailingWhitespace": true 
+}
+```
