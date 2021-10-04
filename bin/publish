@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+# publish.sh -- publish to github pages.
+#
+# the github repo is configured to serve the `docs` folder within the
+# `gh-pages` branch.
+#
+# see https://github.com/radavis/ubuntu-for-development/settings
+
+git checkout main && git pull
+git checkout gh-pages && git pull
+git merge main
+npm i && npm run build
+git add .
+timestamp=$(env TZ=UTC date "+%Y%m%d%H%M%S")
+git commit -m "$timestamp build"
+git push origin gh-pages
