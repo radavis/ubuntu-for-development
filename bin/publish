@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-# publish.sh -- publish to github pages.
+# publish.sh -- publish the main branch to github pages.
 #
 # the github repo is configured to serve the `docs` folder within the
 # `gh-pages` branch.
@@ -9,7 +9,7 @@
 
 git checkout main && git pull
 git checkout gh-pages && git pull
-git merge main
+git merge main --no-edit
 npm i && npm run build
 git add .
 timestamp=$(env TZ=UTC date "+%Y%m%d%H%M%S")
