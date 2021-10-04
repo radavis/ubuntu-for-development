@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "honkit build",
-    "honkit": "honkit",
-    "serve": "honkit serve",
-    "start": "honkit serve --reload",
+    "build": "honkit build ./ ./docs",
+    "start": "honkit serve --reload ./ ./_book",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +14,6 @@
   "devDependencies": {
     "gitbook-plugin-ace": "^0.3.2",
     "gitbook-plugin-include-codeblock": "^3.1.4",
-    "honkit": "^3.6.16"
+    "honkit": "^3.6.22"
   }
 }
