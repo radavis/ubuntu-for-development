@@ -28,3 +28,13 @@ $ git add .
 $ git commit -m 'published on 20210331'
 $ git push origin gh-pages
 ```
+
+## todo
+
+* for each file in `src/SUMMARY.md`
+  - extract bash commands (three backticks and `bash`)
+  - create `src/${filename}.sh`
+  - "compile" files into `src/SUMMARY.sh`
+  - execute within a VM
+  - capture log
+  - capture other artifacts

@@ -17,7 +17,7 @@ Replace `/dev/sdX` with the name of the device.
 **`dd` command is destructive** and will overwrite all data on the
 specified device.
 
-```bash
+```
 $ sudo fdisk -l
 $ sudo dd \
     bs=4M \

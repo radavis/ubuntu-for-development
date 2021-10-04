@@ -8,7 +8,7 @@ Follow the
 [instructions](https://github.com/ohmybash/oh-my-bash#basic-installation)
 in the `README` file.
 
-```bash
+```
 # ~/.bashrc
 OSH_THEME="powerline"
 ```
