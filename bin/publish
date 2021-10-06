@@ -1,4 +1,5 @@
 #! /usr/bin/env bash
+set -Eeuo pipefail
 
 # publish.sh -- publish the main branch to github pages.
 #
@@ -6,6 +7,12 @@
 # `gh-pages` branch.
 #
 # see https://github.com/radavis/ubuntu-for-development/settings
+
+git_status=$(git status --porcelain)
+if [[ -n "$git_status" ]]; then
+  echo "There are unstaged changes. Aborting."
+  exit 1
+fi
 
 git checkout main && git pull
 git checkout gh-pages && git pull
