@@ -22,3 +22,4 @@ git add .
 timestamp=$(env TZ=UTC date "+%Y%m%d%H%M%S")
 git commit -m "$timestamp build"
 git push origin gh-pages
+git checkout main
