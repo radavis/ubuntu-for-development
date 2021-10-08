@@ -30,7 +30,6 @@ Show RAM Usage
 
 ```bash
 $ free -m  # in megabytes
-$ htop
 ```
 
 Show Disk Usage

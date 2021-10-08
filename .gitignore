@@ -1,5 +1,6 @@
 /_book
 /node_modules
+/src/*.sh
 *.swp
 
 assets/images/tmux-plus-nano.png

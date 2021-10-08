@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+# md2sh - extract shell commands from markdown
+#   input: markdown filename
+#   output: shell script
+
+require "fileutils"
+require "pathname"
+
+file = ARGV[0]
+
+extension = file.split(".").last
+script = Pathname.new(file).sub_ext(".sh")
+
+if file.nil? || !File.exists?(file)
+  puts "USAGE: #{$0} filename"
+  exit 1
+end
+
+MARKER = "```"
+result = ["#!/usr/bin/env bash\n", "set -Eeuxo pipefail\n"]
+reading = false
+File.readlines(file).each do |line|
+  if line.start_with?(MARKER)
+    reading = !reading
+    next
+  end
+
+  if reading
+    line.gsub!(/^\$\s+/, '')
+    result << line
+  end
+end
+
+File.write(script, result.join)
+FileUtils.chmod("+x", script)
+
+# output to log
+# ./script.sh 2>&1 | tee script.log
+
