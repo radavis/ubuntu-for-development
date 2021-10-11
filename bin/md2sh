@@ -18,7 +18,7 @@ if file.nil? || !File.exists?(file)
 end
 
 MARKER = "```"
-result = ["#!/usr/bin/env bash\n", "set -Eeuxo pipefail\n"]
+result = []
 reading = false
 File.readlines(file).each do |line|
   if line.start_with?(MARKER)
@@ -32,9 +32,11 @@ File.readlines(file).each do |line|
   end
 end
 
-File.write(script, result.join)
-FileUtils.chmod("+x", script)
+if !result.empty?
+  result.unshift("#!/usr/bin/env bash\n", "set -Eeuxo pipefail\n")
+  File.write(script, result.join)
+  FileUtils.chmod("+x", script)
+end
 
 # output to log
 # ./script.sh 2>&1 | tee script.log
-
