@@ -12,7 +12,6 @@ add `$USER` to the `docker` group, and verify the installation
 ```bash
 $ sudo usermod -aG docker $USER
 $ newgrp docker
-$ nano nano ~/.docker/config.json # set 'currentContext' to 'default'
 $ docker run hello-world
 ```
 
