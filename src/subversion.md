@@ -33,11 +33,11 @@ $ sudo apachectl -t
 $ sudo systemctl restart apache2
 ```
 
-Create an admin user, and other users
+Create htpasswd users: `admin` and `$USER` 
 
 ```bash
 $ sudo htpasswd -cm /etc/apache2/dav_svn.passwd admin
-$ sudo htpasswd -m /etc/apache2/dav_svn.passwd rad
+$ sudo htpasswd -m /etc/apache2/dav_svn.passwd $USER
 ```
 
 Create a place for the subversion repository to exist within the filesystem
@@ -47,6 +47,13 @@ $ sudo mkdir -p /var/lib/svn/
 ```
 
 Create an individual repository
+
+```bash
+$ cd ~/
+$ svnadmin create new-example-repository
+$ cd new-example-repository
+```
+
 
 ```bash
 $ sudo svnadmin create /var/lib/svn/example-repo
@@ -63,5 +70,24 @@ $ sudo chmod -R 775 /var/lib/svn
 View the repository 
 
 ```bash
-$ browse http://localhost/svn/example-repo/
+$ browse http://127.0.0.1:80/svn/example-repo/
 ```
+
+Create a working copy
+
+```bash
+# svn checkout http://127.0.0.1:80/svn/example-repo/ # => uri_skip_ancestor: Assertion `svn_uri_is_canonical(child_uri, NULL)' failed.
+$ git svn clone http://127.0.0.1:80/svn/example-repo/
+```
+
+Add the recommended folder structure from svnbook.red-bean.com
+
+```bash
+$ cd example-repo
+$ mkdir -p {branches,tags,trunk}
+$ touch {branches,tags}/.keep
+$ echo "# example-repo" > trunk/README.md
+```
+
+NOTES: stuck, can't push code to server
+
