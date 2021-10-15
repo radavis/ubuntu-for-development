@@ -2,4 +2,15 @@
 
 [[source]](https://windscribe.com/guides/linux#how-to)
 
-[import](./windscribe.sh)
+```bash
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
+$ echo 'deb https://repo.windscribe.com/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
+$ sudo apt-get update
+$ sudo apt-get install windscribe-cli
+$ windscribe --version
+```
+
+```
+$ windscribe login
+$ windscribe --help
+```

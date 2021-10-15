@@ -9,6 +9,7 @@ $ uptime | xclip
 Copy from the terminal to the clipboard, for pasting into GUI windows
 
 ```bash
+# filename: ~/.bashrc
 alias clip="xclip -selection clipboard"
 ```
 

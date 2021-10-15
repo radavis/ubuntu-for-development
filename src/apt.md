@@ -25,7 +25,21 @@ I find it helpful to maintain a plain-text file of packages I regularly use.
 $ touch ~/Aptfile
 ```
 
-[import](./Aptfile)
+```bash
+# filename: ~/Aptfile
+build-essential
+curl
+fonts-powerline
+fzf
+git
+jq
+libffi-dev
+libncurses-dev
+silversearcher-ag
+tree
+wget
+xclip
+```
 
 ```bash
 $ cat ~/Aptfile | xargs sudo apt install -y
@@ -34,7 +48,7 @@ $ cat ~/Aptfile | xargs sudo apt install -y
 ## Create an alias
 
 ```bash
-# ~/.bashrc
+# filename: ~/.bashrc
 alias apti="cat $HOME/Aptfile | xargs sudo apt install -y"
 ```
 
