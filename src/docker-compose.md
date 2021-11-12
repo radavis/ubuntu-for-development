@@ -1,19 +1,4 @@
-# docker
-
-install docker-ce, start the docker service
-
-```bash
-$ curl https://get.docker.com | sh
-$ sudo systemctl --now enable docker
-```
-
-add `$USER` to the `docker` group, and verify the installation
-
-```bash
-$ sudo usermod -aG docker $USER
-$ newgrp docker
-$ docker run hello-world
-```
+# docker-compose
 
 install docker-compose
 

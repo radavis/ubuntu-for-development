@@ -1,8 +1,7 @@
 # MySQL/MariaDB
 
 ```bash
-$ apt update
-$ apt install mariadb-server libmariadb-dev
+$ sudo apt install mariadb-server libmariadb-dev
 $ sudo mysql_secure_installation
 ```
 
@@ -25,3 +24,15 @@ $ sudo !!
 MariaDB [(none)]> show databases;
 MariaDB [(none)]> \q
 ```
+
+Make your user a superuser within MySQL/MariaDB
+
+```bash
+$ echo $USER  # make a note of your username
+$ mysql -uroot
+mysql> CREATE USER 'your-username'@'localhost' IDENTIFIED BY '';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'your-username'@'localhost' WITH GRANT OPTION;
+mysql> \q
+```
+
+[[source](https://tableplus.com/blog/2018/10/how-to-create-a-superuser-in-mysql.html)]

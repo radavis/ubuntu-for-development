@@ -3,6 +3,7 @@
 First, install Erlang.
 
 ```bash
+$ sudo apt install autoconf automake libncurses5-dev libwxgtk3.0-gtk3-dev
 $ asdf plugin add erlang
 $ asdf install erlang latest
 $ asdf global erlang latest

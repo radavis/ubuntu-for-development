@@ -3,6 +3,8 @@
 Install `ruby` via asdf.
 
 ```bash
+$ sudo apt install libssl-dev zlib1g-dev # ruby v3
+$ sudo apt install libreadline-dev # ruby v2.5
 $ asdf plugin add ruby
 $ asdf install ruby latest
 ```
@@ -14,7 +16,7 @@ $ mkdir new-rails-project && cd $_
 # define language and tool versions
 $ asdf local ruby latest
 $ asdf local nodejs latest
-$ asdf local yarn latest
+$ npm i -g yarn
 # see bundler.io/gemfile.html
 $ gem install bundler
 $ bundle init # gives you a Gemfile
