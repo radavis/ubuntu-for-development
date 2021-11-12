@@ -6,7 +6,7 @@ $ apt install mariadb-server libmariadb-dev
 $ sudo mysql_secure_installation
 ```
 
-To install other releases of mariadb:
+To install other releases of mariadb: [[source](https://www.linuxbabe.com/mariadb/install-mariadb-ubuntu-18-04-18-10)]
 
 ```bash
 $ apt install software-properties-common
@@ -16,4 +16,12 @@ $ apt update
 $ apt install mariadb-server
 ```
 
-[[source](https://www.linuxbabe.com/mariadb/install-mariadb-ubuntu-18-04-18-10)]
+Verify your installation
+
+```bash
+$ mysql --user=root
+ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+$ sudo !!
+MariaDB [(none)]> show databases;
+MariaDB [(none)]> \q
+```

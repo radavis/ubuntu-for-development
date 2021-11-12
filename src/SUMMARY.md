@@ -1,5 +1,6 @@
 * [Intro](README.md)
 * [Boot from USB](boot-from-usb.md)
+* [Update OS](update-os.md)
 * [Gnome](gnome.md)
 * [terminal](terminal.md)
 * [aliases](aliases.md)

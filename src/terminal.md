@@ -4,6 +4,15 @@
 
 ## Install `oh-my-bash`
 
+Open `gnome-terminal` via the shortcut `Ctrl+Alt+T`, or via the Ubuntu launcher, press `Win` then type `terminal`.
+
+Install `curl` and `git`.
+
+```bash
+$ sudo apt update
+$ sudo apt install curl git
+```
+
 Follow the
 [instructions](https://github.com/ohmybash/oh-my-bash#basic-installation)
 in the `README` file.

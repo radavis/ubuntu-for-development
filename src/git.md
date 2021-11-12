@@ -33,3 +33,7 @@ $ git config --list
 # fast-forward (instead of rebase) when pulling code
 $ git config --global pull.ff only
 ```
+
+If you need to manage git settings by folder, read about how to use
+[Conditional Includes](https://stackoverflow.com/a/43654115/2675670)
+from within your `~/.gitconfig` file.
