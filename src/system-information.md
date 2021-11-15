@@ -42,7 +42,13 @@ $ df -h
 List Running Services
 
 ```bash
-$ service --status-all
+$ systemctl
+```
+
+View Logs for a Service
+
+```bash
+$ journalctl -u service-name
 ```
 
 Show IP Addresses

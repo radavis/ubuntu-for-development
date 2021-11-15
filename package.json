@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "honkit build ./ ./docs",
+    "clean": "rm -rf ./docs",
     "start": "honkit serve --reload ./ ./_book",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
