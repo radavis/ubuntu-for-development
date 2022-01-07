@@ -46,8 +46,21 @@ Create and edit `/.config/VSCodium/product.json`
 
 ```
 {
+  "keyboard.dispatch": "keyCode",
   "editor.minimap.enabled": false,
   "editor.rulers": [80],
-  "files.trimTrailingWhitespace": true 
+  "files.trimTrailingWhitespace": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "files.trimFinalNewlines": true,
+  "window.menuBarVisibility": "toggle",
+  "editorconfig.generateAuto": false,
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": 1,
+  "workbench.editor.enablePreview": false,
+  "explorer.autoReveal": false,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
 }
 ```
