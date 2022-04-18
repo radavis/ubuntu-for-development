@@ -1,4 +1,4 @@
-# ruby
+## ruby
 
 Install `ruby` via asdf.
 
@@ -42,4 +42,3 @@ Open [https://localhost:3000/](http://localhost:3000) in a browser.
 
 See the [Rails Guides](https://guides.rubyonrails.org/) for taking this example
 further.
-

@@ -1,4 +1,4 @@
-# tmux
+## tmux
 
 Install tmux
 
@@ -25,15 +25,4 @@ Auto-load tmux when loading the terminal
 if [[ $- == *i* ]] && [[ -z "${TMUX}" ]]; then
   tmux attach || exec tmux new-session && exit;
 fi
-```
-
-Persist tmux sessions between system restarts
-[[source](https://andrewjamesjohnson.com/restoring-tmux-sessions/)]
-
-```bash
-# ~/.tmux.conf.local
-set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'tmux-plugins/tmux-continuum'
-
-set -g @continuum-restore 'on'
 ```

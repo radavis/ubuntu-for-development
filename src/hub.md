@@ -1,4 +1,4 @@
-# hub
+## hub
 
 The `hub` command allows you to interact with GitHub from the command-line.
 
@@ -17,7 +17,7 @@ HUB_VERSION=2.14.2
 PATH="$HOME/hub-linux-amd64-$HUB_VERSION/bin:$PATH"
 ```
 
-## Create a GitHub Personal Access Token
+### Create a GitHub Personal Access Token
 
 Visit https://github.com/settings/tokens, click "Generate new token".
 
@@ -26,7 +26,7 @@ Check `repo`, `gist`. Click "Generate token".
 Store the generated token as an environment variable `GITHUB_TOKEN=xyz` within
 `~/.env_vars`.
 
-## Verify
+### Verify
 
 ```bash
 $ hub --version

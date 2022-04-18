@@ -1,8 +1,8 @@
-# VSCodium
+## VSCodium
 
 VSCodium is VSCode stripped of Microsoft telemetry.
 
-## Install via dpkg
+### Install via dpkg
 
 Download `codium_$VERSION_amd64.deb`,
 [here](https://github.com/VSCodium/vscodium/releases).
@@ -12,7 +12,7 @@ $ cd ~/Downloads
 $ sudo dpkg -i codium_$VERSION_amd64.deb
 ```
 
-## Fix remapped CapsLock & Esc keys
+### Fix remapped CapsLock & Esc keys
 
 Edit `~/.config/VSCodium/User/settings.json`
 
@@ -24,7 +24,7 @@ Edit `~/.config/VSCodium/User/settings.json`
 
 [[source](https://github.com/microsoft/vscode/issues/23991#issuecomment-292336504)]
 
-## Configure Extensions Source
+### Configure Extensions Source
 
 Create and edit `/.config/VSCodium/product.json`
 
@@ -42,7 +42,7 @@ Create and edit `/.config/VSCodium/product.json`
 
 [[source](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions--marketplace)]
 
-## Editor Settings
+### Other Editor Settings
 
 ```
 {
@@ -61,6 +61,7 @@ Create and edit `/.config/VSCodium/product.json`
   "explorer.autoReveal": false,
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
-  "editor.insertSpaces": true
+  "editor.insertSpaces": true,
+  "window.title": "${activeEditorLong}${separator}${rootName}"
 }
 ```

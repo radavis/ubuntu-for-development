@@ -1,4 +1,4 @@
-# System Information
+## System Information
 
 The following commands show you how to extract useful information about your Operating System.
 

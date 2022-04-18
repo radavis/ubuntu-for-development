@@ -1,6 +1,6 @@
-# postgres
+## postgres
 
-install postgres, make yourself a superuser, and create your root database.
+Install postgres, make yourself a superuser, and create your root database.
 
 ```bash
 $ sudo apt install postgresql postgresql-contrib libpq-dev
@@ -15,4 +15,3 @@ $ psql
 
 - [DigitalOcean: Install Postgres on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart)
 - [postgres docs: Creating a Database](https://www.postgresql.org/docs/9.0/tutorial-createdb.html)
-

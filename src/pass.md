@@ -1,4 +1,4 @@
-# pass
+## pass
 
 A CLI password manager
 
@@ -52,7 +52,7 @@ $ pass git push -u origin master
 
 [[source](https://www.cloudsavvyit.com/8817/how-to-use-pass-a-command-line-password-manager-for-linux-systems/)]
 
-## gpg
+### gpg
 
 List keys
 

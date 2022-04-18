@@ -1,4 +1,4 @@
-# nano
+## nano
 
 Install the latest version of the `nano` text editor.
 
@@ -13,7 +13,7 @@ $ make
 $ sudo make install
 ```
 
-## Configuration
+### Configuration
 
 To see the options available for configuration, take a look at the manual:
 `man nanorc`
@@ -32,7 +32,7 @@ set tabstospaces
 set trimblanks
 ```
 
-## Syntax Highlighting
+### Syntax Highlighting
 
 ```bash
 $ cd ~/nano-$NANO_VERSION/syntax
