@@ -1,4 +1,4 @@
-# subversion
+## subversion
 
 [[source](https://computingforgeeks.com/how-to-install-svn-server-on-ubuntu-debian/)]
 
@@ -60,7 +60,7 @@ $ sudo chown -R www-data:www-data /var/lib/svn
 $ sudo chmod -R 775 /var/lib/svn
 ```
 
-View the repository 
+View the repository
 
 ```bash
 $ browse http://localhost/svn/example-repo/

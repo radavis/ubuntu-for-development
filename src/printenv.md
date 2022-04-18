@@ -1,6 +1,6 @@
-# printenv
+## printenv
 
-The `printenv` command shows us the variables, and their values, that are 
+The `printenv` command shows us the variables, and their values, that are
 stored in our working shell environment.
 
 ```bash
@@ -16,7 +16,7 @@ $ echo "$SHELL"
 $ echo "$EDITOR"
 ```
 
-## API keys
+### API keys
 
 When working with a Web API, it's good practice to keep your API key separate
 from your code. By storing these values in your environment, you can define
@@ -44,7 +44,7 @@ Pretty-print the output with `jq`
 $ curl https://api.themoviedb.org/3/movie/615643?api_key=$TMDB_API_KEY | jq
 ```
 
-## Load Environment Variables
+### Load Environment Variables
 
 Load the variables stored in `~/.env_vars` when starting the terminal,
 before reaching the bash prompt.
@@ -58,4 +58,3 @@ if [[ -f "$ENV_VAR_FILE" ]]; then
   source "$ENV_VAR_FILE"
 fi
 ```
-

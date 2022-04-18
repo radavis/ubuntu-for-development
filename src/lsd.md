@@ -1,4 +1,4 @@
-# lsd
+## lsd
 
 First, download the Ubuntu Mono nerd-fonts.
 

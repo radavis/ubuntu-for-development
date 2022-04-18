@@ -1,4 +1,4 @@
-# delta
+## delta
 
 ```bash
 $ DELTA_VERSION=0.8.0

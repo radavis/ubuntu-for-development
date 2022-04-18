@@ -1,4 +1,4 @@
-# pass-restore
+## pass-restore
 
 ```bash
 $ cp -r /media/$USER/$FLASH_DRIVE/gpg ~/

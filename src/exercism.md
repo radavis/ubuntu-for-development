@@ -1,4 +1,4 @@
-# exercism
+## exercism
 
 [exercism.io](https://exercism.io) is a platform for learning to code. Choose
 from a variety of languages. Complete programming challenges, view other's

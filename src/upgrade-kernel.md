@@ -1,4 +1,4 @@
-# Upgrade Linux Kernel
+## Upgrade Linux Kernel
 
 [[source](https://askubuntu.com/a/142000/917817)]
 

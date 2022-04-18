@@ -1,6 +1,6 @@
-# adb
+## adb
 
-Download the 
+Download the
 [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools).
 
 ```bash
@@ -15,7 +15,7 @@ ANDROID_SDK_VERSION=31.0.3
 PATH="$HOME/android-sdk-tools-v$ANDROID_SDK_VERSION:$PATH"
 ```
 
-## update android os
+### update android os
 
 [[source](https://developers.google.com/android/ota)]
 
@@ -29,7 +29,7 @@ $ filename=walleye-ota-rp1a.201005.004.a1-ccd1069b.zip
 $ adb sideload $filename.zip
 ```
 
-## install patched boot image
+### install patched boot image
 
 [[source](https://www.thecustomdroid.com/android-11-magisk-rooting-guide/)]
 

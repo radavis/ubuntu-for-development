@@ -1,4 +1,4 @@
-# MySQL/MariaDB
+## MySQL/MariaDB
 
 ```bash
 $ sudo apt install mariadb-server libmariadb-dev

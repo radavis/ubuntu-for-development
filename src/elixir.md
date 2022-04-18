@@ -1,4 +1,4 @@
-# elixir
+## elixir
 
 First, install Erlang.
 

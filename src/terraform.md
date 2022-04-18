@@ -1,4 +1,4 @@
-# terraform
+## terraform
 
 [[source](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/docker-get-started)]
 
@@ -12,4 +12,3 @@ $ sudo apt-get install terraform
 $ terraform -version
 $ terraform -help
 ```
-

@@ -1,4 +1,4 @@
-# outro
+## outro
 
 If you got this far, you have installed and verified languages, databases, and
 tools necessary to get 💩 done in Ubuntu!

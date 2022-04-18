@@ -1,4 +1,4 @@
-# aliases
+## aliases
 
 An alias allows you to define a shortcut for longer commands.
 

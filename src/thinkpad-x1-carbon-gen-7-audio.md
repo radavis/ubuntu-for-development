@@ -1,4 +1,4 @@
-# ThinkPad X1 Carbon gen 7 Audio
+## ThinkPad X1 Carbon gen 7 Audio
 
 ```bash
 $ lspci
@@ -17,7 +17,7 @@ $ sudo lspci -v -s 00:1f.3
         Kernel modules: snd_hda_intel, snd_sof_pci
 ```
 
-## Fix audio popping
+### Fix audio popping
 
 ```bash
 $ hda-verb /dev/snd/hwC0D0 0x20 SET_COEF_INDEX 0x67

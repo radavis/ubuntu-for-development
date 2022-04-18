@@ -1,4 +1,4 @@
-# pass
+## pass
 
 A CLI password manager
 

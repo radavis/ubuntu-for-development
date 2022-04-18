@@ -1,8 +1,8 @@
-# terminal
+## terminal
 
 `gnome-terminal` is the default terminal application in Ubuntu.
 
-## Install `oh-my-bash`
+### Install `oh-my-bash`
 
 Open `gnome-terminal` via the shortcut `Ctrl+Alt+T`, or via the Ubuntu launcher, press `Win` then type `terminal`.
 
@@ -22,7 +22,7 @@ in the `README` file.
 OSH_THEME="powerline"
 ```
 
-## Create a keyboard shortcut to open `gnome-terminal` full-screen
+### Create a keyboard shortcut to open `gnome-terminal` full-screen
 
 1. Press Super, type 'keyboard' or 'keyboard shortcuts', press Enter
 2. Add a new Custom Shortcut.

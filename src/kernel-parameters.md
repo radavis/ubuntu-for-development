@@ -1,14 +1,14 @@
-# kernel
+## kernel
 
 The Linux kernel is the "core" of the Operating System. It is the software that manages the resources of the hardware.
 
-## List installed kernels
+### List installed kernels
 
 ```bash
 $ dpkg --list | grep linux-image
 ```
 
-## Change Linux Kernel Parameters via Grub
+### Change Linux Kernel Parameters via Grub
 
 ```bash
 $ sudo nano /etc/default/grub
@@ -32,5 +32,3 @@ $ sudo update-grub
 ```
 
 [[source](https://github.com/bubbathevtog/2013-pixel-archlinux)]
-
-

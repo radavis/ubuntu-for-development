@@ -1,8 +1,8 @@
-# apt
+## apt
 
 The `apt` command allows us to manage the applications, tools, and libraries installed on Ubuntu.
 
-## Upgrade Packages
+### Upgrade Packages
 
 ```bash
 $ sudo apt update
@@ -10,14 +10,14 @@ $ apt list --upgradable
 $ sudo apt upgrade
 ```
 
-## List Installed Pacakges
+### List Installed Pacakges
 
 ```bash
 $ apt list --installed
 $ apt list --installed | grep --invert-match automatic
 ```
 
-## Install a List of Packages
+### Install a List of Packages
 
 I find it helpful to maintain a plain-text file of packages I regularly use.
 
@@ -31,7 +31,7 @@ $ touch ~/Aptfile
 $ cat ~/Aptfile | xargs sudo apt install -y
 ```
 
-## Create an alias
+### Create an alias
 
 ```bash
 # ~/.bashrc

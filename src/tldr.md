@@ -1,8 +1,8 @@
-# tldr
+## tldr
 
 View a short description of bash commands with examples.
 
-## Install
+### Install
 
 Install the tldr bash client. [[repo](https://gitlab.com/pepa65/tldr-bash-client)]
 
@@ -14,7 +14,7 @@ $ curl -OL https://4e4.win/tldr
 $ chmod +x tldr
 ```
 
-## Usage
+### Usage
 
 ```bash
 $ tldr --help

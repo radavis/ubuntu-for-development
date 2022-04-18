@@ -1,4 +1,4 @@
-# shortcuts
+## shortcuts
 
 Unity Launcher shortcuts are located at `/usr/share/applications`
 

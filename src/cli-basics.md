@@ -1,4 +1,4 @@
-# Command Line Interface Basics
+## Command Line Interface Basics
 
 ![linux file commands](assets/images/file-commands.png)
 

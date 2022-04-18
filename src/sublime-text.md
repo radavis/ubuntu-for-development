@@ -1,15 +1,15 @@
-# sublime-text
+## sublime-text
 
 Sublime Text is an excellent, low-memory text editor. I tend to switch over to
 the rock-solid stable Sublime Text when VS Code or Atom start acting funky
 after an auto-update.
 
-## Install
+### Install
 
 Follow the instructions for installing via `apt`,
 [here](https://www.sublimetext.com/docs/linux_repositories.html).
 
-## Configuration
+### Configuration
 
 `Preferences -> Settings` and update the following user settings:
 
@@ -32,4 +32,3 @@ A few recommended packages:
 - GitHub Theme
 - Gitignored File Excluder
 - Markdown Extended
-

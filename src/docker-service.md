@@ -1,4 +1,4 @@
-# docker service
+## docker service
 
 install docker-ce, start the docker service
 
@@ -7,7 +7,7 @@ $ curl https://get.docker.com | sh
 $ sudo systemctl --now enable docker
 ```
 
-## Setup Docker daemon as a service
+### Setup Docker daemon as a service
 
 add `$USER` to the `docker` group, and verify the installation
 
@@ -17,7 +17,7 @@ $ newgrp docker
 $ docker run hello-world
 ```
 
-## Uninstall Docker
+### Uninstall Docker
 
 [[source](https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine)]
 

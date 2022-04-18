@@ -1,8 +1,8 @@
-# asdf
+## asdf
 
 An extensible Version Manager.
 
-# Install via git
+### Install via git
 
 [[source](https://asdf-vm.com/#/core-manage-asdf)]
 
@@ -17,7 +17,7 @@ source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
 ```
 
-# Add plugins for languages, tools, and install
+### Add plugins for languages, tools, and install
 
 ```bash
 $ asdf plugin add nodejs

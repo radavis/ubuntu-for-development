@@ -1,4 +1,4 @@
-# Update OS
+## Update OS
 
 The system will prompt you to update. Once complete, restart.
 

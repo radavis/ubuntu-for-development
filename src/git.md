@@ -1,4 +1,4 @@
-# git
+## git
 
 Tell `git` who you are.
 

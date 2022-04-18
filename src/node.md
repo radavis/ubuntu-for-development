@@ -1,4 +1,4 @@
-# node
+## node
 
 Manage Node versions with `n`
 

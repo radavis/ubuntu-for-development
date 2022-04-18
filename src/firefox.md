@@ -1,4 +1,4 @@
-# firefox 
+## firefox
 
 Open firefox in fullscreen mode
 
