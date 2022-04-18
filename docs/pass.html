@@ -1,0 +1,709 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>pass · Ubuntu for Development</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.22">
+        <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tmux.html" />
+    
+    
+    <link rel="prev" href="nano.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Intro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="boot-from-usb.html">
+            
+                <a href="boot-from-usb.html">
+            
+                    
+                    Boot from USB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="update-os.html">
+            
+                <a href="update-os.html">
+            
+                    
+                    Update OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="gnome.html">
+            
+                <a href="gnome.html">
+            
+                    
+                    Gnome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="terminal.html">
+            
+                <a href="terminal.html">
+            
+                    
+                    terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="aliases.html">
+            
+                <a href="aliases.html">
+            
+                    
+                    aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="apt.html">
+            
+                <a href="apt.html">
+            
+                    
+                    apt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="tldr.html">
+            
+                <a href="tldr.html">
+            
+                    
+                    tldr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="system-information.html">
+            
+                <a href="system-information.html">
+            
+                    
+                    System Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="cli-basics.html">
+            
+                <a href="cli-basics.html">
+            
+                    
+                    CLI Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="printenv.html">
+            
+                <a href="printenv.html">
+            
+                    
+                    printenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="fzf.html">
+            
+                <a href="fzf.html">
+            
+                    
+                    fzf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="hub.html">
+            
+                <a href="hub.html">
+            
+                    
+                    hub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="nano.html">
+            
+                <a href="nano.html">
+            
+                    
+                    nano
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="pass.html">
+            
+                <a href="pass.html">
+            
+                    
+                    pass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="tmux.html">
+            
+                <a href="tmux.html">
+            
+                    
+                    tmux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="vim.html">
+            
+                <a href="vim.html">
+            
+                    
+                    vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="remap-capslock.html">
+            
+                <a href="remap-capslock.html">
+            
+                    
+                    Remap CapsLock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="vscodium.html">
+            
+                <a href="vscodium.html">
+            
+                    
+                    VSCodium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="asdf.html">
+            
+                <a href="asdf.html">
+            
+                    
+                    asdf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ruby.html">
+            
+                <a href="ruby.html">
+            
+                    
+                    ruby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="elixir.html">
+            
+                <a href="elixir.html">
+            
+                    
+                    elixir
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="docker-rootless.html">
+            
+                <a href="docker-rootless.html">
+            
+                    
+                    docker-rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="docker-compose.html">
+            
+                <a href="docker-compose.html">
+            
+                    
+                    docker-compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="postgres.html">
+            
+                <a href="postgres.html">
+            
+                    
+                    postgres
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="virtualbox.html">
+            
+                <a href="virtualbox.html">
+            
+                    
+                    virtualbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="exercism.html">
+            
+                <a href="exercism.html">
+            
+                    
+                    exercism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="outro.html">
+            
+                <a href="outro.html">
+            
+                    
+                    Outro
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >pass</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="pass">pass</h2>
+<p>A CLI password manager</p>
+<p>Setup:</p>
+<pre><code class="lang-bash">$ sudo apt install pass
+<span class="hljs-comment"># specify 4096 bits and username in next step</span>
+$ gpg --full-generate-key
+$ pass init username
+</code></pre>
+<p>Add password</p>
+<pre><code class="lang-bash">$ pass insert service/username
+</code></pre>
+<p>Generate password</p>
+<pre><code class="lang-bash">$ pass generate service/username 32 --no-symbols
+</code></pre>
+<p>List passwords</p>
+<pre><code class="lang-bash">$ pass
+</code></pre>
+<p>Retrieve password</p>
+<pre><code class="lang-bash">$ pass service/username
+</code></pre>
+<p>Copy password to clipboard</p>
+<pre><code class="lang-bash">$ pass --clip service/username
+</code></pre>
+<p>Git integration</p>
+<pre><code class="lang-bash">$ pass git init
+<span class="hljs-comment"># create a private git repository</span>
+$ pass git remote add origin git@git-server.com:username/repository.git
+$ pass git push -u origin master
+</code></pre>
+<p>[<a href="https://www.cloudsavvyit.com/8817/how-to-use-pass-a-command-line-password-manager-for-linux-systems/" target="_blank">source</a>]</p>
+<h3 id="gpg">gpg</h3>
+<p>List keys</p>
+<pre><code class="lang-bash">$ gpg --list-keys
+</code></pre>
+<p>Export keys. Keep your keys safe.</p>
+<pre><code class="lang-bash">$ mkdir ~/gpg
+$ gpg --<span class="hljs-built_in">export</span> --armor <span class="hljs-string">&quot;User Name&quot;</span> &gt; ~/gpg/public.key
+$ gpg --export-secret-keys <span class="hljs-string">&quot;User Name&quot;</span> &gt; ~/gpg/private.key
+</code></pre>
+<p>Import a key</p>
+<pre><code class="lang-bash">$ gpg --import /path/to/key
+</code></pre>
+<p>It may be necessary to
+<a href="https://stackoverflow.com/a/34132924/2675670" target="_blank">set the trust level of the keys</a>,
+after importing.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="nano.html" class="navigation navigation-prev " aria-label="Previous page: nano">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tmux.html" class="navigation navigation-next " aria-label="Next page: tmux">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"pass","level":"1.17","depth":1,"next":{"title":"tmux","level":"1.18","depth":1,"path":"tmux.md","ref":"tmux.md","articles":[]},"previous":{"title":"nano","level":"1.16","depth":1,"path":"nano.md","ref":"nano.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"pass.md","mtime":"2022-04-18T15:54:36.188Z","type":"markdown"},"gitbook":{"version":"3.6.22","time":"2022-04-18T15:57:25.816Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
