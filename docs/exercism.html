@@ -6,7 +6,7 @@
         <title>exercism · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.6.22">
+        <meta name="generator" content="HonKit 3.7.5">
         <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
         
         
@@ -16,11 +16,11 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-gitbook-plugin-ace/ace.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -542,15 +542,15 @@ solutions, and get community feedback on your code.</p>
 <pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> ~
 $ mkdir -p exercism/cli
 $ <span class="hljs-built_in">cd</span> exercism/cli
-$ curl -OL https://github.com/exercism/cli/releases/download/v3.0.13/exercism-linux-64bit.tgz
-$ tar -zxvf exercism-linux-64bit.tgz
+$ EXERCISM_VERSION=3.1.0
+$ curl -OL https://github.com/exercism/cli/releases/download/v<span class="hljs-variable">$EXERCISM_VERSION</span>/exercism-<span class="hljs-variable">$EXERCISM_VERSION</span>-linux-x86_64.tar.gz
+$ tar -zxvf exercism-<span class="hljs-variable">$EXERCISM_VERSION</span>-linux-x86_64.tar.gz
 </code></pre>
 <p>Add the <code>exercism</code> command to your <code>$PATH</code></p>
 <pre><code class="lang-bash"><span class="hljs-comment"># ~/.bashrc</span>
 
 <span class="hljs-comment"># exercism</span>
 PATH=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/exercism/cli:<span class="hljs-variable">$PATH</span>&quot;</span>
-<span class="hljs-built_in">source</span> <span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/exercism/cli/shell/exercism_completion.bash&quot;</span>
 </code></pre>
 <p>Configure the <code>exercism</code> command with your authentication token from <a href="https://exercism.io/my/settings" target="_blank">https://exercism.io/my/settings</a></p>
 <pre><code class="lang-bash">$ exercism configure --token=&lt;your-token&gt; --workspace=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/exercism&quot;</span>
@@ -601,7 +601,7 @@ PATH=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/ex
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"exercism","level":"1.30","depth":1,"next":{"title":"Outro","level":"1.31","depth":1,"path":"outro.md","ref":"outro.md","articles":[]},"previous":{"title":"virtualbox","level":"1.29","depth":1,"path":"virtualbox.md","ref":"virtualbox.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"exercism.md","mtime":"2022-04-18T15:54:36.188Z","type":"markdown"},"gitbook":{"version":"3.6.22","time":"2022-04-18T15:57:25.816Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"exercism","level":"1.30","depth":1,"next":{"title":"Outro","level":"1.31","depth":1,"path":"outro.md","ref":"outro.md","articles":[]},"previous":{"title":"virtualbox","level":"1.29","depth":1,"path":"virtualbox.md","ref":"virtualbox.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"exercism.md","mtime":"2023-02-02T20:16:06.483Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2023-02-02T20:16:10.364Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -655,11 +655,11 @@ PATH=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/ex
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-gitbook-plugin-ace/ace/ace.js"></script>
+        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-gitbook-plugin-ace/ace.js"></script>
+        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
         
     
         
