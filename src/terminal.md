@@ -13,9 +13,13 @@ $ sudo apt update
 $ sudo apt install curl git
 ```
 
-Follow the
-[instructions](https://github.com/ohmybash/oh-my-bash#basic-installation)
-in the `README` file.
+Install `oh-my-bash`. [[instructions](https://github.com/ohmybash/oh-my-bash#basic-installation)]
+
+```bash
+$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+```
+
+Set the theme for `oh-my-bash`.
 
 ```bash
 # ~/.bashrc

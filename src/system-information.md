@@ -60,6 +60,7 @@ $ ip addr show
 Get System Hardware Information
 
 ```bash
+$ echo "inxi" >> ~/Aptfile && apti
 $ inxi --basic
 ```
 

@@ -10,8 +10,9 @@ Download and extract the exercism cli
 $ cd ~
 $ mkdir -p exercism/cli
 $ cd exercism/cli
-$ curl -OL https://github.com/exercism/cli/releases/download/v3.0.13/exercism-linux-64bit.tgz
-$ tar -zxvf exercism-linux-64bit.tgz
+$ EXERCISM_VERSION=3.1.0
+$ curl -OL https://github.com/exercism/cli/releases/download/v$EXERCISM_VERSION/exercism-$EXERCISM_VERSION-linux-x86_64.tar.gz
+$ tar -zxvf exercism-$EXERCISM_VERSION-linux-x86_64.tar.gz
 ```
 
 Add the `exercism` command to your `$PATH`
@@ -21,7 +22,6 @@ Add the `exercism` command to your `$PATH`
 
 # exercism
 PATH="$HOME/exercism/cli:$PATH"
-source "$HOME/exercism/cli/shell/exercism_completion.bash"
 ```
 
 Configure the `exercism` command with your authentication token from https://exercism.io/my/settings

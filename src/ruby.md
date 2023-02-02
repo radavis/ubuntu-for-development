@@ -3,7 +3,7 @@
 Install `ruby` via asdf.
 
 ```bash
-$ sudo apt install libssl-dev zlib1g-dev # ruby v3
+$ sudo apt install libssl-dev zlib1g-dev libyaml-dev # ruby v3
 $ sudo apt install libreadline-dev # ruby v2.5
 $ asdf plugin add ruby
 $ asdf install ruby latest
