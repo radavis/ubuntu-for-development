@@ -1,11 +1,11 @@
 ## nano
 
-Install the latest version of the `nano` text editor.
+Build and install `nano`.
 
 ```bash
 $ cd ~
-$ NANO_VERSION=5.8
-$ curl -O https://nano-editor.org/dist/v5/nano-$NANO_VERSION.tar.gz
+$ NANO_VERSION=7.2
+$ curl -O https://nano-editor.org/dist/v7/nano-$NANO_VERSION.tar.gz
 $ tar -zxvf nano-$NANO_VERSION.tar.gz
 $ cd nano-$NANO_VERSION
 $ ./configure

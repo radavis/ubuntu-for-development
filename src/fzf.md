@@ -6,7 +6,7 @@ A command-line fuzzy finder.
 $ nano `fzf`
 ```
 
-Configure `fzf` to ignore `.gitignore`d files
+Configure `fzf` to ignore files in `.gitignore`.
 
 ```bash
 # ignore gitignored files when using fzf

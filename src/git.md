@@ -21,7 +21,7 @@ Add a few useful aliases to `~/.bashrc`.
 ```bash
 alias ga="git add" # usage: ga filename
 alias gc="git commit -m" # usage: gc "commit message"
-alias gs="git status" 3 # usage: gs
+alias gs="git status" # usage: gs
 ```
 
 Other `git` configuration commands:

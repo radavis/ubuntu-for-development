@@ -3,7 +3,7 @@
 Setup Docker daemon in rootless mode
 
 ```bash
-$ sudo apt install uidmap dbus-user-session
+$ sudo apt install uidmap dbus-user-session fuse-overlayfs slirp4netns
 $ curl -fsSL https://get.docker.com/rootless | sh
 ```
 

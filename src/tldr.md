@@ -10,7 +10,7 @@ Install the tldr bash client. [[repo](https://gitlab.com/pepa65/tldr-bash-client
 # add `PATH="$HOME/.local/bin:$PATH"` to `~/.bashrc`
 $ mkdir -p ~/.local/bin
 $ cd ~/.local/bin
-$ curl -OL https://4e4.win/tldr
+$ curl -OL https://good4.eu/tldr
 $ chmod +x tldr
 ```
 

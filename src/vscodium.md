@@ -26,7 +26,7 @@ Edit `~/.config/VSCodium/User/settings.json`
 
 ### Configure Extensions Source
 
-Create and edit `/.config/VSCodium/product.json`
+Create and edit `~/.config/VSCodium/product.json`
 
 ```
 {
