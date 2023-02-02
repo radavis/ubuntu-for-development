@@ -7,7 +7,7 @@ VSCodium is VSCode stripped of Microsoft telemetry.
 Download `codium_$VERSION_amd64.deb`,
 [here](https://github.com/VSCodium/vscodium/releases).
 
-```
+```bash
 $ cd ~/Downloads
 $ sudo dpkg -i codium_$VERSION_amd64.deb
 ```
@@ -16,7 +16,7 @@ $ sudo dpkg -i codium_$VERSION_amd64.deb
 
 Edit `~/.config/VSCodium/User/settings.json`
 
-```
+```json
 {
     "keyboard.dispatch": "keyCode"
 }
@@ -28,7 +28,7 @@ Edit `~/.config/VSCodium/User/settings.json`
 
 Create and edit `~/.config/VSCodium/product.json`
 
-```
+```json
 {
   "extensionsGallery": {
     "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
@@ -44,7 +44,7 @@ Create and edit `~/.config/VSCodium/product.json`
 
 ### Other Editor Settings
 
-```
+```json
 {
   "keyboard.dispatch": "keyCode",
   "editor.minimap.enabled": false,

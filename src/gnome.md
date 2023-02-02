@@ -4,7 +4,7 @@ Gnome is the default Desktop Environment in Ubuntu.
 
 ### Install Gnome Tweak Tool and shell integration
 
-```
+```bash
 $ sudo apt install gnome-tweaks chrome-gnome-shell
 ```
 
