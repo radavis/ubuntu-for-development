@@ -18,7 +18,7 @@ $ sudo make install
 To see the options available for configuration, take a look at the manual:
 `man nanorc`
 
-```
+```bash
 # ~/.nanorc
 set atblanks
 set autoindent
@@ -39,7 +39,7 @@ $ cd ~/nano-$NANO_VERSION/syntax
 $ sudo make install
 ```
 
-```
+```bash
 # ~/.nanorc
 include /usr/local/share/nano/*.nanorc
 include /usr/local/share/nano/extra/*.nanorc
