@@ -42,3 +42,16 @@ Open [https://localhost:3000/](http://localhost:3000) in a browser.
 
 See the [Rails Guides](https://guides.rubyonrails.org/) for taking this example
 further.
+
+### Update Ruby
+
+```bash
+$ asdf install ruby 3.1.2
+ruby-build: definition not found: 3.1.2
+
+$ asdf plugin update ruby
+Updating ruby to master
+
+$ asdf install ruby 3.1.2
+Installed ruby-3.1.2 to /home/rd/.asdf/installs/ruby/3.1.2
+```
