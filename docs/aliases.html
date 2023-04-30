@@ -398,12 +398,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.25" data-path="docker-rootless.html">
+        <li class="chapter " data-level="1.25" data-path="docker.html">
             
-                <a href="docker-rootless.html">
+                <a href="docker.html">
             
                     
-                    docker-rootless
+                    docker
             
                 </a>
             
@@ -536,14 +536,18 @@
                                 
                                 <h2 id="aliases">aliases</h2>
 <p>An alias allows you to define a shortcut for longer commands.</p>
-<pre><code class="lang-bash"><span class="hljs-comment"># ~/.bashrc</span>
+<pre><code class="lang-bash"><span class="hljs-comment"># ~/.alias</span>
 <span class="hljs-built_in">alias</span> c=<span class="hljs-string">&quot;clear&quot;</span>  <span class="hljs-comment"># or ctrl+l</span>
 <span class="hljs-built_in">alias</span> dc=<span class="hljs-string">&quot;docker-compose&quot;</span>
 <span class="hljs-built_in">alias</span> push=<span class="hljs-string">&quot;git push origin HEAD&quot;</span>
 <span class="hljs-built_in">alias</span> t=<span class="hljs-string">&quot;tree&quot;</span>
 <span class="hljs-built_in">alias</span> x=<span class="hljs-string">&quot;exit&quot;</span>
 </code></pre>
-<p>After making changes to <code>~/.bashrc</code> it is necessary to load the updated
+<p>Load these aliases automatically when your terminal loads.</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># ~/.bashrc</span>
+<span class="hljs-built_in">source</span> <span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.alias&quot;</span>
+</code></pre>
+<p>After making changes to <code>~/.alias</code> it is necessary to load the updated
 settings.</p>
 <pre><code class="lang-bash">$ . ~/.bashrc
 <span class="hljs-comment"># or</span>
@@ -593,7 +597,7 @@ $ <span class="hljs-built_in">source</span> ~/.bashrc
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"aliases","level":"1.6","depth":1,"next":{"title":"apt","level":"1.7","depth":1,"path":"apt.md","ref":"apt.md","articles":[]},"previous":{"title":"terminal","level":"1.5","depth":1,"path":"terminal.md","ref":"terminal.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"aliases.md","mtime":"2023-04-30T14:09:26.851Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2023-04-30T14:14:10.442Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"aliases","level":"1.6","depth":1,"next":{"title":"apt","level":"1.7","depth":1,"path":"apt.md","ref":"apt.md","articles":[]},"previous":{"title":"terminal","level":"1.5","depth":1,"path":"terminal.md","ref":"terminal.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"aliases.md","mtime":"2023-04-30T14:16:08.534Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2023-04-30T14:16:16.585Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

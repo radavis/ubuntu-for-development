@@ -398,12 +398,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.25" data-path="docker-rootless.html">
+        <li class="chapter " data-level="1.25" data-path="docker.html">
             
-                <a href="docker-rootless.html">
+                <a href="docker.html">
             
                     
-                    docker-rootless
+                    docker
             
                 </a>
             
@@ -546,7 +546,7 @@ tmux_conf_copy_to_os_clipboard=<span class="hljs-literal">true</span>
 </code></pre>
 <p>Auto-load tmux when loading the terminal
 [<a href="https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux" target="_blank">source</a>]</p>
-<pre><code class="lang-bash"><span class="hljs-comment"># autoload tmux - place at EOF (end-of-file) within ~/.bashrc</span>
+<pre><code class="lang-bash"><span class="hljs-comment"># autoload tmux</span>
 <span class="hljs-comment"># if shell is interactive, and TMUX var is set...</span>
 <span class="hljs-keyword">if</span> [[ $- == *i* ]] &amp;&amp; [[ -z <span class="hljs-string">&quot;<span class="hljs-variable">${TMUX}</span>&quot;</span> ]]; <span class="hljs-keyword">then</span>
   tmux attach || <span class="hljs-built_in">exec</span> tmux new-session &amp;&amp; <span class="hljs-built_in">exit</span>;
@@ -595,7 +595,7 @@ tmux_conf_copy_to_os_clipboard=<span class="hljs-literal">true</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"tmux","level":"1.18","depth":1,"next":{"title":"vim","level":"1.19","depth":1,"path":"vim.md","ref":"vim.md","articles":[]},"previous":{"title":"pass","level":"1.17","depth":1,"path":"pass.md","ref":"pass.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"tmux.md","mtime":"2023-04-30T14:09:26.851Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2023-04-30T14:14:10.442Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"tmux","level":"1.18","depth":1,"next":{"title":"vim","level":"1.19","depth":1,"path":"vim.md","ref":"vim.md","articles":[]},"previous":{"title":"pass","level":"1.17","depth":1,"path":"pass.md","ref":"pass.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"tmux.md","mtime":"2023-04-30T14:16:08.534Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2023-04-30T14:16:16.585Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

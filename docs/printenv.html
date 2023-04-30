@@ -398,12 +398,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.25" data-path="docker-rootless.html">
+        <li class="chapter " data-level="1.25" data-path="docker.html">
             
-                <a href="docker-rootless.html">
+                <a href="docker.html">
             
                     
-                    docker-rootless
+                    docker
             
                 </a>
             
@@ -550,27 +550,27 @@ $ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;<span 
 from your code. By storing these values in your environment, you can define
 this API key ouside of your code, and still easily access its value.</p>
 <p>First, store the key-value pair in a file.</p>
-<pre><code class="lang-bash"><span class="hljs-comment"># ~/.env_vars</span>
+<pre><code class="lang-bash"><span class="hljs-comment"># ~/.env</span>
 <span class="hljs-built_in">export</span> TMDB_API_KEY=tmdb-api-key-value
 </code></pre>
 <p>Then, source the file to load the key-value pair into the working shell
 environment.</p>
-<pre><code class="lang-bash">$ <span class="hljs-built_in">source</span> ~/.env_vars <span class="hljs-comment"># or</span>
-$ . ~/.env_vars
+<pre><code class="lang-bash">$ <span class="hljs-built_in">source</span> ~/.env <span class="hljs-comment"># or</span>
+$ . ~/.env
 $ curl https://api.themoviedb.org/3/movie/615643?api_key=<span class="hljs-variable">$TMDB_API_KEY</span>
 </code></pre>
 <p>Pretty-print the output with <code>jq</code></p>
 <pre><code class="lang-bash">$ curl https://api.themoviedb.org/3/movie/615643?api_key=<span class="hljs-variable">$TMDB_API_KEY</span> | jq
 </code></pre>
 <h3 id="load-environment-variables">Load Environment Variables</h3>
-<p>Load the variables stored in <code>~/.env_vars</code> when starting the terminal,
+<p>Load the variables stored in <code>~/.env</code> when starting the terminal,
 before reaching the bash prompt.</p>
 <pre><code class="lang-bash"><span class="hljs-comment"># ~/.bashrc</span>
 
 <span class="hljs-comment"># load user-set environment variables</span>
-ENV_VAR_FILE=<span class="hljs-variable">$HOME</span>/.env_vars
-<span class="hljs-keyword">if</span> [[ -f <span class="hljs-string">&quot;<span class="hljs-variable">$ENV_VAR_FILE</span>&quot;</span> ]]; <span class="hljs-keyword">then</span>
-  <span class="hljs-built_in">source</span> <span class="hljs-string">&quot;<span class="hljs-variable">$ENV_VAR_FILE</span>&quot;</span>
+ENV_VARIABLES=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.env&quot;</span>
+<span class="hljs-keyword">if</span> [[ -f <span class="hljs-string">&quot;<span class="hljs-variable">$ENV_VARIABLES</span>&quot;</span> ]]; <span class="hljs-keyword">then</span>
+  <span class="hljs-built_in">source</span> <span class="hljs-string">&quot;<span class="hljs-variable">$ENV_VARIABLES</span>&quot;</span>
 <span class="hljs-keyword">fi</span>
 </code></pre>
 
@@ -616,7 +616,7 @@ ENV_VAR_FILE=<span class="hljs-variable">$HOME</span>/.env_vars
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"printenv","level":"1.13","depth":1,"next":{"title":"fzf","level":"1.14","depth":1,"path":"fzf.md","ref":"fzf.md","articles":[]},"previous":{"title":"ssh","level":"1.12","depth":1,"path":"ssh.md","ref":"ssh.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"printenv.md","mtime":"2023-04-30T14:09:26.851Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2023-04-30T14:14:10.442Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"printenv","level":"1.13","depth":1,"next":{"title":"fzf","level":"1.14","depth":1,"path":"fzf.md","ref":"fzf.md","articles":[]},"previous":{"title":"ssh","level":"1.12","depth":1,"path":"ssh.md","ref":"ssh.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"printenv.md","mtime":"2023-04-30T14:16:08.534Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2023-04-30T14:16:16.585Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

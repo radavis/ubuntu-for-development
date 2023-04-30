@@ -3,7 +3,7 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
-        <title>docker-rootless · Ubuntu for Development</title>
+        <title>docker · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.7.5">
@@ -398,12 +398,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.25" data-path="docker-rootless.html">
+        <li class="chapter active" data-level="1.25" data-path="docker.html">
             
-                <a href="docker-rootless.html">
+                <a href="docker.html">
             
                     
-                    docker-rootless
+                    docker
             
                 </a>
             
@@ -519,7 +519,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >docker-rootless</a>
+        <a href="." >docker</a>
     </h1>
 </div>
 
@@ -536,20 +536,16 @@
                                 
                                 <h2 id="docker-rootless">docker rootless</h2>
 <p>Setup Docker daemon in rootless mode</p>
-<pre><code class="lang-bash">$ sudo apt install uidmap dbus-user-session fuse-overlayfs slirp4netns
-$ curl -fsSL https://get.docker.com/rootless | sh
+<pre><code class="lang-bash">$ curl -fsSL https://get.docker.com -o get-docker.sh
+$ sudo sh get-docker.sh
 </code></pre>
-<pre><code class="lang-bash"><span class="hljs-comment"># ~/.bashrc</span>
-
-<span class="hljs-comment"># docker</span>
-<span class="hljs-built_in">export</span> PATH=/home/rd/bin:<span class="hljs-variable">$PATH</span>
-<span class="hljs-built_in">export</span> DOCKER_HOST=unix:///run/user/1000/docker.sock
+<p>Add yourself to the <code>docker</code> group</p>
+<pre><code class="lang-bash">$ sudo usermod -aG docker <span class="hljs-variable">$USER</span>
 </code></pre>
-<p>Start the daemon</p>
-<pre><code class="lang-bash">$ systemctl --user <span class="hljs-built_in">enable</span> docker
-$ sudo loginctl enable-linger $(whoami)
+<p>Reboot! Then, test it out</p>
+<pre><code class="lang-bash">$ docker run hello-world
 </code></pre>
-<p>[<a href="https://docs.docker.com/engine/security/rootless/" target="_blank">source</a>]</p>
+<p>[<a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">source</a>]</p>
 
                                 
                                 </section>
@@ -593,7 +589,7 @@ $ sudo loginctl enable-linger $(whoami)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"docker-rootless","level":"1.25","depth":1,"next":{"title":"docker-compose","level":"1.26","depth":1,"path":"docker-compose.md","ref":"docker-compose.md","articles":[]},"previous":{"title":"elixir","level":"1.24","depth":1,"path":"elixir.md","ref":"elixir.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"docker-rootless.md","mtime":"2023-04-30T14:09:26.851Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2023-04-30T14:14:10.442Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"docker","level":"1.25","depth":1,"next":{"title":"docker-compose","level":"1.26","depth":1,"path":"docker-compose.md","ref":"docker-compose.md","articles":[]},"previous":{"title":"elixir","level":"1.24","depth":1,"path":"elixir.md","ref":"elixir.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"docker.md","mtime":"2023-04-30T14:16:08.534Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2023-04-30T14:16:16.585Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
