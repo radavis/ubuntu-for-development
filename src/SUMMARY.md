@@ -22,7 +22,7 @@
 * [asdf](asdf.md)
 * [ruby](ruby.md)
 * [elixir](elixir.md)
-* [docker-rootless](docker-rootless.md)
+* [docker](docker.md)
 * [docker-compose](docker-compose.md)
 * [postgres](postgres.md)
 * [mysql](mysql.md)

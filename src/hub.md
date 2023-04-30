@@ -24,7 +24,7 @@ Visit https://github.com/settings/tokens, click "Generate new token".
 Check `repo`, `gist`. Click "Generate token".
 
 Store the generated token as an environment variable `GITHUB_TOKEN=xyz` within
-`~/.env_vars`.
+`~/.env`.
 
 ### Verify
 
