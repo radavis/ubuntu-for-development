@@ -16,7 +16,7 @@ Verify the commands above created a `~/.gitconfig` file.
 $ cat ~/.gitconfig
 ```
 
-Add a few useful aliases to `~/.bashrc`.
+Add a few useful aliases to `~/.alias`.
 
 ```bash
 alias ga="git add" # usage: ga filename
@@ -31,6 +31,9 @@ Other `git` configuration commands:
 $ git config --list
 # fast-forward (instead of rebase) when pulling code
 $ git config --global pull.ff only
+# create a global .gitignore using gitignore.io
+$ curl -L https://www.toptal.com/developers/gitignore/api/ruby,node,linux -o ~/.gitignore
+$ git config --global core.excludesfile ~/.gitignore
 ```
 
 If you need to manage git settings by folder, read about how to use

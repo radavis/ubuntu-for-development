@@ -25,7 +25,7 @@ this API key ouside of your code, and still easily access its value.
 First, store the key-value pair in a file.
 
 ```bash
-# ~/.env_vars
+# ~/.env
 export TMDB_API_KEY=tmdb-api-key-value
 ```
 
@@ -33,8 +33,8 @@ Then, source the file to load the key-value pair into the working shell
 environment.
 
 ```bash
-$ source ~/.env_vars # or
-$ . ~/.env_vars
+$ source ~/.env # or
+$ . ~/.env
 $ curl https://api.themoviedb.org/3/movie/615643?api_key=$TMDB_API_KEY
 ```
 
@@ -46,15 +46,15 @@ $ curl https://api.themoviedb.org/3/movie/615643?api_key=$TMDB_API_KEY | jq
 
 ### Load Environment Variables
 
-Load the variables stored in `~/.env_vars` when starting the terminal,
+Load the variables stored in `~/.env` when starting the terminal,
 before reaching the bash prompt.
 
 ```bash
 # ~/.bashrc
 
 # load user-set environment variables
-ENV_VAR_FILE=$HOME/.env_vars
-if [[ -f "$ENV_VAR_FILE" ]]; then
-  source "$ENV_VAR_FILE"
+ENV_VARIABLES="$HOME/.env"
+if [[ -f "$ENV_VARIABLES" ]]; then
+  source "$ENV_VARIABLES"
 fi
 ```
