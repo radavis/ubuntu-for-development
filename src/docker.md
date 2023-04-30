@@ -1,6 +1,6 @@
-## docker rootless
+## docker
 
-Setup Docker daemon in rootless mode
+Setup Docker Engine
 
 ```bash
 $ curl -fsSL https://get.docker.com -o get-docker.sh
