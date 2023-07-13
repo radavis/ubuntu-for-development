@@ -29,6 +29,8 @@ Other `git` configuration commands:
 ```bash
 # show current configuration
 $ git config --list
+# configure pager to exit if output is less than one screen
+$ git config --global core.pager "less -FR"
 # fast-forward (instead of rebase) when pulling code
 $ git config --global pull.ff only
 # create a global .gitignore using gitignore.io
