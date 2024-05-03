@@ -12,7 +12,7 @@
 * [ssh](ssh.md)
 * [printenv](printenv.md)
 * [fzf](fzf.md)
-* [hub](hub.md)
+* [gh](gh.md)
 * [nano](nano.md)
 * [pass](pass.md)
 * [tmux](tmux.md)

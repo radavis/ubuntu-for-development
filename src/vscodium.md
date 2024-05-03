@@ -12,18 +12,6 @@ $ cd ~/Downloads
 $ sudo dpkg -i codium_$VERSION_amd64.deb
 ```
 
-### Fix remapped CapsLock & Esc keys
-
-Edit `~/.config/VSCodium/User/settings.json`
-
-```json
-{
-    "keyboard.dispatch": "keyCode"
-}
-```
-
-[[source](https://github.com/microsoft/vscode/issues/23991#issuecomment-292336504)]
-
 ### Configure Extensions Source
 
 Create and edit `~/.config/VSCodium/product.json`
@@ -46,7 +34,6 @@ Create and edit `~/.config/VSCodium/product.json`
 
 ```json
 {
-  "keyboard.dispatch": "keyCode",
   "editor.minimap.enabled": false,
   "editor.rulers": [80],
   "files.trimTrailingWhitespace": true,
