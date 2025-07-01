@@ -4,8 +4,7 @@ An alias allows you to define a shortcut for longer commands.
 
 ```bash
 # ~/.alias
-alias c="clear"  # or ctrl+l
-alias dc="docker-compose"
+alias dc="docker compose"
 alias push="git push origin HEAD"
 alias t="tree"
 alias x="exit"
