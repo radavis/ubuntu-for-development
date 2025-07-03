@@ -7,7 +7,7 @@ An extensible Version Manager.
 [[source](https://asdf-vm.com/#/core-manage-asdf)]
 
 ```bash
-$ ASDF_VERSION=0.11.3
+$ ASDF_VERSION=0.14.0
 $ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v$ASDF_VERSION
 ```
 

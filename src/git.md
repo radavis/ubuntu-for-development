@@ -22,6 +22,8 @@ Add a few useful aliases to `~/.alias`.
 alias ga="git add" # usage: ga filename
 alias gc="git commit -m" # usage: gc "commit message"
 alias gs="git status" # usage: gs
+alias gr="git reset"
+alias grh="git reset --hard HEAD"
 ```
 
 Other `git` configuration commands:
@@ -29,8 +31,8 @@ Other `git` configuration commands:
 ```bash
 # show current configuration
 $ git config --list
-# fast-forward (instead of rebase) when pulling code
-$ git config --global pull.ff only
+# configure pager to exit if output is less than one screen
+$ git config --global core.pager "less -FR"
 # create a global .gitignore using gitignore.io
 $ curl -L https://www.toptal.com/developers/gitignore/api/ruby,node,linux -o ~/.gitignore
 $ git config --global core.excludesfile ~/.gitignore
