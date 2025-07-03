@@ -9,11 +9,11 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     strategy:
       matrix:
-        node-version: [18.13.0, 18.14.0]
+        node-version: [18.13.0, 22.17.0]
 
     steps:
       - uses: actions/checkout@v3
