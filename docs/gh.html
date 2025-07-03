@@ -3,7 +3,7 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
-        <title>hub · Ubuntu for Development</title>
+        <title>gh · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.7.5">
@@ -268,12 +268,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.15" data-path="hub.html">
+        <li class="chapter active" data-level="1.15" data-path="gh.html">
             
-                <a href="hub.html">
+                <a href="gh.html">
             
                     
-                    hub
+                    gh
             
                 </a>
             
@@ -519,7 +519,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >hub</a>
+        <a href="." >gh</a>
     </h1>
 </div>
 
@@ -534,27 +534,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="hub">hub</h2>
-<p>The <code>hub</code> command allows you to interact with GitHub from the command-line.</p>
-<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> ~
-$ HUB_VERSION=2.14.2
-$ curl -OL https://github.com/github/hub/releases/download/v<span class="hljs-variable">$HUB_VERSION</span>/hub-linux-amd64-<span class="hljs-variable">$HUB_VERSION</span>.tgz
-$ tar -zxvf hub-linux-amd64-<span class="hljs-variable">$HUB_VERSION</span>.tgz
-$ rm hub-linux-amd64-<span class="hljs-variable">$HUB_VERSION</span>.tgz
-</code></pre>
-<p>Then, add the following to <code>~/.bashrc</code></p>
-<pre><code class="lang-bash">HUB_VERSION=2.14.2
-PATH=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/hub-linux-amd64-<span class="hljs-variable">$HUB_VERSION</span>/bin:<span class="hljs-variable">$PATH</span>&quot;</span>
+                                <h2 id="gh">gh</h2>
+<p>The <code>gh</code> command allows you to interact with GitHub from the command-line.</p>
+<h3 id="install-via-dpkg">Install via dpkg</h3>
+<p>Download <code>gh_$VERSION_linux_amd64.deb</code>, <a href="https://github.com/cli/cli/releases" target="_blank">here</a>.</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> ~/Downloads
+$ sudo dpkg -i gh_<span class="hljs-variable">$VERSION_linux_amd64</span>.deb
 </code></pre>
 <h3 id="create-a-github-personal-access-token">Create a GitHub Personal Access Token</h3>
 <p>Visit <a href="https://github.com/settings/tokens" target="_blank">https://github.com/settings/tokens</a>, click &quot;Generate new token&quot;.</p>
 <p>Check <code>repo</code>, <code>gist</code>. Click &quot;Generate token&quot;.</p>
-<p>Store the generated token as an environment variable <code>GITHUB_TOKEN=xyz</code> within
+<p>Store the generated token as an environment variable <code>GH_TOKEN=xyz</code> within
 <code>~/.env</code>.</p>
 <h3 id="verify">Verify</h3>
-<pre><code class="lang-bash">$ hub --version
-$ tldr hub
-$ hub browse webgems/webgems
+<pre><code class="lang-bash">$ gh --version
+$ tldr gh
 </code></pre>
 
                                 
@@ -599,7 +593,7 @@ $ hub browse webgems/webgems
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"hub","level":"1.15","depth":1,"next":{"title":"nano","level":"1.16","depth":1,"path":"nano.md","ref":"nano.md","articles":[]},"previous":{"title":"fzf","level":"1.14","depth":1,"path":"fzf.md","ref":"fzf.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"hub.md","mtime":"2025-07-03T14:05:05.149Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T16:34:12.539Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"gh","level":"1.15","depth":1,"next":{"title":"nano","level":"1.16","depth":1,"path":"nano.md","ref":"nano.md","articles":[]},"previous":{"title":"fzf","level":"1.14","depth":1,"path":"fzf.md","ref":"fzf.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"gh.md","mtime":"2025-07-03T17:12:12.544Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T17:12:21.619Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
