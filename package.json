@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gitbook-plugin-ace": "^0.3.2",
-    "gitbook-plugin-include-codeblock": "^3.2.3",
-    "honkit": "^3.7.5"
+    "gitbook-plugin-ace": "^0.1.2",
+    "gitbook-plugin-include-codeblock": "^3.1.4",
+    "honkit": "^6.0.3"
   }
 }
