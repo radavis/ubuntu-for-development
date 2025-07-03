@@ -6,7 +6,7 @@
         <title>apt · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.7.5">
+        <meta name="generator" content="HonKit 6.0.3">
         <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
         
         
@@ -28,7 +28,7 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -537,9 +537,9 @@
                                 <h2 id="apt">apt</h2>
 <p>The <code>apt</code> command allows us to manage the applications, tools, and libraries installed on Ubuntu.</p>
 <h3 id="upgrade-packages">Upgrade Packages</h3>
-<pre><code class="lang-bash">$ sudo apt update
+<pre><code class="lang-bash">$ <span class="hljs-built_in">sudo</span> apt update
 $ apt list --upgradable
-$ sudo apt upgrade
+$ <span class="hljs-built_in">sudo</span> apt upgrade
 </code></pre>
 <h3 id="list-installed-pacakges">List Installed Pacakges</h3>
 <pre><code class="lang-bash">$ apt list --installed
@@ -547,7 +547,7 @@ $ apt list --installed | grep --invert-match automatic
 </code></pre>
 <h3 id="install-a-list-of-packages">Install a List of Packages</h3>
 <p>I find it helpful to maintain a plain-text file of packages I regularly use.</p>
-<pre><code class="lang-bash">$ touch ~/Aptfile
+<pre><code class="lang-bash">$ <span class="hljs-built_in">touch</span> ~/Aptfile
 </code></pre>
 <pre><code>build-essential
 curl
@@ -561,11 +561,11 @@ silversearcher-ag
 tree
 wget
 xclip
-</code></pre><pre><code class="lang-bash">$ cat ~/Aptfile | xargs sudo apt install -y
+</code></pre><pre><code class="lang-bash">$ <span class="hljs-built_in">cat</span> ~/Aptfile | xargs <span class="hljs-built_in">sudo</span> apt install -y
 </code></pre>
 <h3 id="create-an-alias">Create an alias</h3>
 <pre><code class="lang-bash"><span class="hljs-comment"># ~/.bashrc</span>
-<span class="hljs-built_in">alias</span> apti=<span class="hljs-string">&quot;cat <span class="hljs-variable">$HOME</span>/Aptfile | xargs sudo apt install -y&quot;</span>
+<span class="hljs-built_in">alias</span> apti=<span class="hljs-string">"cat <span class="hljs-variable">$HOME</span>/Aptfile | xargs sudo apt install -y"</span>
 </code></pre>
 <p>When you need to install one or more packages, add them to <code>~/Aptfile</code>
 and run <code>apti</code>.</p>
@@ -612,7 +612,7 @@ and run <code>apti</code>.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"apt","level":"1.7","depth":1,"next":{"title":"tldr","level":"1.8","depth":1,"path":"tldr.md","ref":"tldr.md","articles":[]},"previous":{"title":"aliases","level":"1.6","depth":1,"path":"aliases.md","ref":"aliases.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"apt.md","mtime":"2025-07-03T17:53:21.859Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T17:53:29.827Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"apt","level":"1.7","depth":1,"next":{"title":"tldr","level":"1.8","depth":1,"path":"tldr.md","ref":"tldr.md","articles":[]},"previous":{"title":"aliases","level":"1.6","depth":1,"path":"aliases.md","ref":"aliases.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"apt.md","mtime":"2025-07-03T18:04:58.774Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-03T18:05:03.771Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -690,7 +690,7 @@ and run <code>apti</code>.</p>
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

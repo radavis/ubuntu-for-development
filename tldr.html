@@ -6,7 +6,7 @@
         <title>tldr · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.7.5">
+        <meta name="generator" content="HonKit 6.0.3">
         <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
         
         
@@ -28,7 +28,7 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -538,11 +538,11 @@
 <p>View a short description of bash commands with examples.</p>
 <h3 id="install">Install</h3>
 <p>Install the tldr bash client. [<a href="https://gitlab.com/pepa65/tldr-bash-client" target="_blank">repo</a>]</p>
-<pre><code class="lang-bash"><span class="hljs-comment"># add `PATH=&quot;$HOME/.local/bin:$PATH&quot;` to `~/.bashrc`</span>
-$ mkdir -p ~/.<span class="hljs-built_in">local</span>/bin
-$ <span class="hljs-built_in">cd</span> ~/.<span class="hljs-built_in">local</span>/bin
+<pre><code class="lang-bash"><span class="hljs-comment"># add `PATH="$HOME/.local/bin:$PATH"` to `~/.bashrc`</span>
+$ <span class="hljs-built_in">mkdir</span> -p ~/.local/bin
+$ <span class="hljs-built_in">cd</span> ~/.local/bin
 $ curl -OL https://good4.eu/tldr
-$ chmod +x tldr
+$ <span class="hljs-built_in">chmod</span> +x tldr
 </code></pre>
 <h3 id="usage">Usage</h3>
 <pre><code class="lang-bash">$ tldr --<span class="hljs-built_in">help</span>
@@ -593,7 +593,7 @@ $ tldr apt
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"tldr","level":"1.8","depth":1,"next":{"title":"System Information","level":"1.9","depth":1,"path":"system-information.md","ref":"system-information.md","articles":[]},"previous":{"title":"apt","level":"1.7","depth":1,"path":"apt.md","ref":"apt.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"tldr.md","mtime":"2025-07-03T17:53:21.865Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T17:53:29.827Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"tldr","level":"1.8","depth":1,"next":{"title":"System Information","level":"1.9","depth":1,"path":"system-information.md","ref":"system-information.md","articles":[]},"previous":{"title":"apt","level":"1.7","depth":1,"path":"apt.md","ref":"apt.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"tldr.md","mtime":"2025-07-03T18:04:58.781Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-03T18:05:03.771Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -671,7 +671,7 @@ $ tldr apt
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

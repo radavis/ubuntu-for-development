@@ -6,7 +6,7 @@
         <title>printenv · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.7.5">
+        <meta name="generator" content="HonKit 6.0.3">
         <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
         
         
@@ -28,7 +28,7 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -537,16 +537,16 @@
                                 <h2 id="printenv">printenv</h2>
 <p>The <code>printenv</code> command shows us the variables, and their values, that are
 stored in our working shell environment.</p>
-<pre><code class="lang-bash">$ tldr printenv
-$ printenv | grep ^USER
-$ printenv | grep ^SHELL
+<pre><code class="lang-bash">$ tldr <span class="hljs-built_in">printenv</span>
+$ <span class="hljs-built_in">printenv</span> | grep ^USER
+$ <span class="hljs-built_in">printenv</span> | grep ^SHELL
 </code></pre>
 <p>Get the value of a variable</p>
-<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;<span class="hljs-variable">$SHELL</span>&quot;</span>
-$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;<span class="hljs-variable">$EDITOR</span>&quot;</span>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">"<span class="hljs-variable">$SHELL</span>"</span>
+$ <span class="hljs-built_in">echo</span> <span class="hljs-string">"<span class="hljs-variable">$EDITOR</span>"</span>
 </code></pre>
 <h3 id="api-keys">API keys</h3>
-<p>When working with a Web API, it&apos;s good practice to keep your API key separate
+<p>When working with a Web API, it's good practice to keep your API key separate
 from your code. By storing these values in your environment, you can define
 this API key ouside of your code, and still easily access its value.</p>
 <p>First, store the key-value pair in a file.</p>
@@ -568,9 +568,9 @@ before reaching the bash prompt.</p>
 <pre><code class="lang-bash"><span class="hljs-comment"># ~/.bashrc</span>
 
 <span class="hljs-comment"># load user-set environment variables</span>
-ENV_VARIABLES=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME</span>/.env&quot;</span>
-<span class="hljs-keyword">if</span> [[ -f <span class="hljs-string">&quot;<span class="hljs-variable">$ENV_VARIABLES</span>&quot;</span> ]]; <span class="hljs-keyword">then</span>
-  <span class="hljs-built_in">source</span> <span class="hljs-string">&quot;<span class="hljs-variable">$ENV_VARIABLES</span>&quot;</span>
+ENV_VARIABLES=<span class="hljs-string">"<span class="hljs-variable">$HOME</span>/.env"</span>
+<span class="hljs-keyword">if</span> [[ -f <span class="hljs-string">"<span class="hljs-variable">$ENV_VARIABLES</span>"</span> ]]; <span class="hljs-keyword">then</span>
+  <span class="hljs-built_in">source</span> <span class="hljs-string">"<span class="hljs-variable">$ENV_VARIABLES</span>"</span>
 <span class="hljs-keyword">fi</span>
 </code></pre>
 
@@ -616,7 +616,7 @@ ENV_VARIABLES=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"printenv","level":"1.13","depth":1,"next":{"title":"fzf","level":"1.14","depth":1,"path":"fzf.md","ref":"fzf.md","articles":[]},"previous":{"title":"ssh","level":"1.12","depth":1,"path":"ssh.md","ref":"ssh.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"printenv.md","mtime":"2025-07-03T17:53:21.864Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T17:53:29.827Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"printenv","level":"1.13","depth":1,"next":{"title":"fzf","level":"1.14","depth":1,"path":"fzf.md","ref":"fzf.md","articles":[]},"previous":{"title":"ssh","level":"1.12","depth":1,"path":"ssh.md","ref":"ssh.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"printenv.md","mtime":"2025-07-03T18:04:58.780Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-03T18:05:03.771Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -694,7 +694,7 @@ ENV_VARIABLES=<span class="hljs-string">&quot;<span class="hljs-variable">$HOME<
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

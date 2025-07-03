@@ -6,7 +6,7 @@
         <title>pass · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.7.5">
+        <meta name="generator" content="HonKit 6.0.3">
         <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
         
         
@@ -28,7 +28,7 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -537,7 +537,7 @@
                                 <h2 id="pass">pass</h2>
 <p>A CLI password manager</p>
 <p>Setup:</p>
-<pre><code class="lang-bash">$ sudo apt install pass
+<pre><code class="lang-bash">$ <span class="hljs-built_in">sudo</span> apt install pass
 <span class="hljs-comment"># specify 4096 bits and username in next step</span>
 $ gpg --full-generate-key
 $ pass init username
@@ -569,9 +569,9 @@ $ pass git push -u origin master
 <pre><code class="lang-bash">$ gpg --list-keys
 </code></pre>
 <p>Export keys. Keep your keys safe.</p>
-<pre><code class="lang-bash">$ mkdir ~/gpg
-$ gpg --<span class="hljs-built_in">export</span> --armor <span class="hljs-string">&quot;User Name&quot;</span> &gt; ~/gpg/public.key
-$ gpg --export-secret-keys <span class="hljs-string">&quot;User Name&quot;</span> &gt; ~/gpg/private.key
+<pre><code class="lang-bash">$ <span class="hljs-built_in">mkdir</span> ~/gpg
+$ gpg --<span class="hljs-built_in">export</span> --armor <span class="hljs-string">"User Name"</span> &gt; ~/gpg/public.key
+$ gpg --export-secret-keys <span class="hljs-string">"User Name"</span> &gt; ~/gpg/private.key
 </code></pre>
 <p>Import a key</p>
 <pre><code class="lang-bash">$ gpg --import /path/to/key
@@ -622,7 +622,7 @@ after importing.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"pass","level":"1.17","depth":1,"next":{"title":"tmux","level":"1.18","depth":1,"path":"tmux.md","ref":"tmux.md","articles":[]},"previous":{"title":"nano","level":"1.16","depth":1,"path":"nano.md","ref":"nano.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"pass.md","mtime":"2025-07-03T17:53:21.864Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T17:53:29.827Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"pass","level":"1.17","depth":1,"next":{"title":"tmux","level":"1.18","depth":1,"path":"tmux.md","ref":"tmux.md","articles":[]},"previous":{"title":"nano","level":"1.16","depth":1,"path":"nano.md","ref":"nano.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"pass.md","mtime":"2025-07-03T18:04:58.780Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-03T18:05:03.771Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -700,7 +700,7 @@ after importing.</p>
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

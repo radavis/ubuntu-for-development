@@ -6,7 +6,7 @@
         <title>git · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.7.5">
+        <meta name="generator" content="HonKit 6.0.3">
         <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
         
         
@@ -28,7 +28,7 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -536,26 +536,26 @@
                                 
                                 <h2 id="git">git</h2>
 <p>Tell <code>git</code> who you are.</p>
-<pre><code class="lang-bash">$ git config --global user.name <span class="hljs-string">&quot;Ash Williams&quot;</span>
-$ git config --global user.email <span class="hljs-string">&quot;ash@s-mart.biz&quot;</span>
-$ git config --global init.defaultBranch <span class="hljs-string">&quot;main&quot;</span>
+<pre><code class="lang-bash">$ git config --global user.name <span class="hljs-string">"Ash Williams"</span>
+$ git config --global user.email <span class="hljs-string">"ash@s-mart.biz"</span>
+$ git config --global init.defaultBranch <span class="hljs-string">"main"</span>
 </code></pre>
 <p>[<a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration" target="_blank">source</a>]</p>
 <p>Verify the commands above created a <code>~/.gitconfig</code> file.</p>
-<pre><code class="lang-bash">$ cat ~/.gitconfig
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cat</span> ~/.gitconfig
 </code></pre>
 <p>Add a few useful aliases to <code>~/.alias</code>.</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> ga=<span class="hljs-string">&quot;git add&quot;</span> <span class="hljs-comment"># usage: ga filename</span>
-<span class="hljs-built_in">alias</span> gc=<span class="hljs-string">&quot;git commit -m&quot;</span> <span class="hljs-comment"># usage: gc &quot;commit message&quot;</span>
-<span class="hljs-built_in">alias</span> gs=<span class="hljs-string">&quot;git status&quot;</span> <span class="hljs-comment"># usage: gs</span>
-<span class="hljs-built_in">alias</span> gr=<span class="hljs-string">&quot;git reset&quot;</span>
-<span class="hljs-built_in">alias</span> grh=<span class="hljs-string">&quot;git reset --hard HEAD&quot;</span>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> ga=<span class="hljs-string">"git add"</span> <span class="hljs-comment"># usage: ga filename</span>
+<span class="hljs-built_in">alias</span> gc=<span class="hljs-string">"git commit -m"</span> <span class="hljs-comment"># usage: gc "commit message"</span>
+<span class="hljs-built_in">alias</span> gs=<span class="hljs-string">"git status"</span> <span class="hljs-comment"># usage: gs</span>
+<span class="hljs-built_in">alias</span> gr=<span class="hljs-string">"git reset"</span>
+<span class="hljs-built_in">alias</span> grh=<span class="hljs-string">"git reset --hard HEAD"</span>
 </code></pre>
 <p>Other <code>git</code> configuration commands:</p>
 <pre><code class="lang-bash"><span class="hljs-comment"># show current configuration</span>
 $ git config --list
 <span class="hljs-comment"># configure pager to exit if output is less than one screen</span>
-$ git config --global core.pager <span class="hljs-string">&quot;less -FR&quot;</span>
+$ git config --global core.pager <span class="hljs-string">"less -FR"</span>
 <span class="hljs-comment"># create a global .gitignore using gitignore.io</span>
 $ curl -L https://www.toptal.com/developers/gitignore/api/ruby,node,linux -o ~/.gitignore
 $ git config --global core.excludesfile ~/.gitignore
@@ -606,7 +606,7 @@ from within your <code>~/.gitconfig</code> file.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git","level":"1.11","depth":1,"next":{"title":"ssh","level":"1.12","depth":1,"path":"ssh.md","ref":"ssh.md","articles":[]},"previous":{"title":"CLI Basics","level":"1.10","depth":1,"path":"cli-basics.md","ref":"cli-basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"git.md","mtime":"2025-07-03T17:53:21.864Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T17:53:29.827Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git","level":"1.11","depth":1,"next":{"title":"ssh","level":"1.12","depth":1,"path":"ssh.md","ref":"ssh.md","articles":[]},"previous":{"title":"CLI Basics","level":"1.10","depth":1,"path":"cli-basics.md","ref":"cli-basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"git.md","mtime":"2025-07-03T18:04:58.780Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-03T18:05:03.771Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -684,7 +684,7 @@ from within your <code>~/.gitconfig</code> file.</p>
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

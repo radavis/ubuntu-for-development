@@ -1,35 +1,39 @@
-require(["gitbook", "jquery"], function (gitbook, $) {
+require(["gitbook", "jquery"], function(gitbook, $) {
 
-  var init = function () {
-    var aceCount = 0;
+    var init = function() {
+        var aceCount = 0;
 
-    $('.ace').each(function () {
-      var $ace = $(this).children('.aceCode');
-      var config = $ace.data('config');
-      var id = 'ace' + (aceCount++);
-      $ace.attr('id', id);
+        $('.ace').each(function() {
+            var $ace = $(this).children('.aceCode');
+            var config = $ace.data('config');
 
-      var editor = ace.edit(id);
+            var id = 'ace' + (aceCount++);
+            $ace.attr('id', id);
 
-      editor.setOptions({
-        autoScrollEditorIntoView: true,
-        maxLines: 100
-      });
+            var editor = ace.edit(id);
 
-      if (!config.edit)
-        editor.setReadOnly(true);
+            editor.setOptions({
+                autoScrollEditorIntoView: true,
+                maxLines: 100
+            });
 
-      if (!config.theme)
-        editor.setTheme('ace/theme/chrome');
-      else
-        editor.setTheme('ace/theme/' + config.theme);
+            if (config.edit === false)
+                editor.setReadOnly(true);
 
-      if (!config.check)
-        editor.session.setOption("useWorker", false);
+            if (config.theme === undefined)
+                editor.setTheme('ace/theme/chrome');
+            else
+                editor.setTheme('ace/theme/' + config.theme);
 
-      editor.getSession().setMode('ace/mode/' + config.lang);
-    });
-  };
+            if (config.check === false)
+                editor.session.setOption("useWorker", false);
 
-  gitbook.events.bind("page.change", init);
+            if (config.lang)
+                editor.getSession().setMode('ace/mode/' + config.lang);
+            else
+                editor.getSession().setMode('ace/mode/c_cpp'); //default to c language
+        });
+    };
+
+    gitbook.events.bind("page.change", init);
 });

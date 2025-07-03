@@ -6,7 +6,7 @@
         <title>VSCodium · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.7.5">
+        <meta name="generator" content="HonKit 6.0.3">
         <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
         
         
@@ -28,7 +28,7 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -540,47 +540,47 @@
 <p>Download <code>codium_$VERSION_amd64.deb</code>,
 <a href="https://github.com/VSCodium/vscodium/releases" target="_blank">here</a>.</p>
 <pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> ~/Downloads
-$ sudo dpkg -i codium_<span class="hljs-variable">$VERSION_amd64</span>.deb
+$ <span class="hljs-built_in">sudo</span> dpkg -i codium_<span class="hljs-variable">$VERSION_amd64</span>.deb
 </code></pre>
 <h3 id="fix-remapped-capslock--esc-keys">Fix remapped CapsLock &amp; Esc keys</h3>
 <p>Edit <code>~/.config/VSCodium/User/settings.json</code></p>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;keyboard.dispatch&quot;</span>: <span class="hljs-string">&quot;keyCode&quot;</span>
+    <span class="hljs-string">"keyboard.dispatch"</span>: <span class="hljs-string">"keyCode"</span>
 }
 </code></pre>
 <p>[<a href="https://github.com/microsoft/vscode/issues/23991#issuecomment-292336504" target="_blank">source</a>]</p>
 <h3 id="configure-extensions-source">Configure Extensions Source</h3>
 <p>Create and edit <code>~/.config/VSCodium/product.json</code></p>
 <pre><code class="lang-json">{
-  <span class="hljs-string">&quot;extensionsGallery&quot;</span>: {
-    <span class="hljs-string">&quot;serviceUrl&quot;</span>: <span class="hljs-string">&quot;https://marketplace.visualstudio.com/_apis/public/gallery&quot;</span>,
-    <span class="hljs-string">&quot;cacheUrl&quot;</span>: <span class="hljs-string">&quot;https://vscode.blob.core.windows.net/gallery/index&quot;</span>,
-    <span class="hljs-string">&quot;itemUrl&quot;</span>: <span class="hljs-string">&quot;https://marketplace.visualstudio.com/items&quot;</span>,
-    <span class="hljs-string">&quot;controlUrl&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-    <span class="hljs-string">&quot;recommendationsUrl&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+  <span class="hljs-string">"extensionsGallery"</span>: {
+    <span class="hljs-string">"serviceUrl"</span>: <span class="hljs-string">"https://marketplace.visualstudio.com/_apis/public/gallery"</span>,
+    <span class="hljs-string">"cacheUrl"</span>: <span class="hljs-string">"https://vscode.blob.core.windows.net/gallery/index"</span>,
+    <span class="hljs-string">"itemUrl"</span>: <span class="hljs-string">"https://marketplace.visualstudio.com/items"</span>,
+    <span class="hljs-string">"controlUrl"</span>: <span class="hljs-string">""</span>,
+    <span class="hljs-string">"recommendationsUrl"</span>: <span class="hljs-string">""</span>
   }
 }
 </code></pre>
 <p>[<a href="https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions--marketplace" target="_blank">source</a>]</p>
 <h3 id="other-editor-settings">Other Editor Settings</h3>
 <pre><code class="lang-json">{
-  <span class="hljs-string">&quot;keyboard.dispatch&quot;</span>: <span class="hljs-string">&quot;keyCode&quot;</span>,
-  <span class="hljs-string">&quot;editor.minimap.enabled&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-string">&quot;editor.rulers&quot;</span>: [<span class="hljs-number">80</span>],
-  <span class="hljs-string">&quot;files.trimTrailingWhitespace&quot;</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-string">&quot;security.workspace.trust.untrustedFiles&quot;</span>: <span class="hljs-string">&quot;open&quot;</span>,
-  <span class="hljs-string">&quot;explorer.confirmDelete&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-string">&quot;files.trimFinalNewlines&quot;</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-string">&quot;window.menuBarVisibility&quot;</span>: <span class="hljs-string">&quot;toggle&quot;</span>,
-  <span class="hljs-string">&quot;editorconfig.generateAuto&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-string">&quot;workbench.startupEditor&quot;</span>: <span class="hljs-string">&quot;none&quot;</span>,
-  <span class="hljs-string">&quot;window.zoomLevel&quot;</span>: <span class="hljs-number">1</span>,
-  <span class="hljs-string">&quot;workbench.editor.enablePreview&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-string">&quot;explorer.autoReveal&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-string">&quot;editor.detectIndentation&quot;</span>: <span class="hljs-literal">false</span>,
-  <span class="hljs-string">&quot;editor.tabSize&quot;</span>: <span class="hljs-number">2</span>,
-  <span class="hljs-string">&quot;editor.insertSpaces&quot;</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-string">&quot;window.title&quot;</span>: <span class="hljs-string">&quot;${activeEditorLong}${separator}${rootName}&quot;</span>
+  <span class="hljs-string">"keyboard.dispatch"</span>: <span class="hljs-string">"keyCode"</span>,
+  <span class="hljs-string">"editor.minimap.enabled"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">"editor.rulers"</span>: [<span class="hljs-number">80</span>],
+  <span class="hljs-string">"files.trimTrailingWhitespace"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">"security.workspace.trust.untrustedFiles"</span>: <span class="hljs-string">"open"</span>,
+  <span class="hljs-string">"explorer.confirmDelete"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">"files.trimFinalNewlines"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">"window.menuBarVisibility"</span>: <span class="hljs-string">"toggle"</span>,
+  <span class="hljs-string">"editorconfig.generateAuto"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">"workbench.startupEditor"</span>: <span class="hljs-string">"none"</span>,
+  <span class="hljs-string">"window.zoomLevel"</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-string">"workbench.editor.enablePreview"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">"explorer.autoReveal"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">"editor.detectIndentation"</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-string">"editor.tabSize"</span>: <span class="hljs-number">2</span>,
+  <span class="hljs-string">"editor.insertSpaces"</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">"window.title"</span>: <span class="hljs-string">"${activeEditorLong}${separator}${rootName}"</span>
 }
 </code></pre>
 
@@ -626,7 +626,7 @@ $ sudo dpkg -i codium_<span class="hljs-variable">$VERSION_amd64</span>.deb
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"VSCodium","level":"1.21","depth":1,"next":{"title":"asdf","level":"1.22","depth":1,"path":"asdf.md","ref":"asdf.md","articles":[]},"previous":{"title":"Remap CapsLock","level":"1.20","depth":1,"path":"remap-capslock.md","ref":"remap-capslock.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"vscodium.md","mtime":"2025-07-03T17:53:21.865Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T17:53:29.827Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"VSCodium","level":"1.21","depth":1,"next":{"title":"asdf","level":"1.22","depth":1,"path":"asdf.md","ref":"asdf.md","articles":[]},"previous":{"title":"Remap CapsLock","level":"1.20","depth":1,"path":"remap-capslock.md","ref":"remap-capslock.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"vscodium.md","mtime":"2025-07-03T18:04:58.781Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-03T18:05:03.771Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -704,7 +704,7 @@ $ sudo dpkg -i codium_<span class="hljs-variable">$VERSION_amd64</span>.deb
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

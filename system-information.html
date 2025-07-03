@@ -6,7 +6,7 @@
         <title>System Information · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.7.5">
+        <meta name="generator" content="HonKit 6.0.3">
         <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
         
         
@@ -28,7 +28,7 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -537,23 +537,23 @@
                                 <h2 id="system-information">System Information</h2>
 <p>The following commands show you how to extract useful information about your Operating System.</p>
 <p>Get OS Version</p>
-<pre><code class="lang-bash">$ cat /etc/os-release
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cat</span> /etc/os-release
 </code></pre>
 <p>Get Linux Version</p>
-<pre><code class="lang-bash">$ uname -srm
+<pre><code class="lang-bash">$ <span class="hljs-built_in">uname</span> -srm
 </code></pre>
 <p>Get Shell Name</p>
-<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;<span class="hljs-variable">$SHELL</span>&quot;</span>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">"<span class="hljs-variable">$SHELL</span>"</span>
 </code></pre>
 <p>Get Desktop Name</p>
-<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;<span class="hljs-variable">$XDG_CURRENT_DESKTOP</span>&quot;</span>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">"<span class="hljs-variable">$XDG_CURRENT_DESKTOP</span>"</span>
 </code></pre>
 <p>Show RAM Usage</p>
 <pre><code class="lang-bash">$ free -m  <span class="hljs-comment"># in megabytes</span>
 $ htop
 </code></pre>
 <p>Show Disk Usage</p>
-<pre><code class="lang-bash">$ df -h
+<pre><code class="lang-bash">$ <span class="hljs-built_in">df</span> -h
 </code></pre>
 <p>List Running Services</p>
 <pre><code class="lang-bash">$ systemctl
@@ -565,7 +565,7 @@ $ htop
 <pre><code class="lang-bash">$ ip addr show
 </code></pre>
 <p>Get System Hardware Information</p>
-<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;inxi&quot;</span> &gt;&gt; ~/Aptfile &amp;&amp; apti
+<pre><code class="lang-bash">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">"inxi"</span> &gt;&gt; ~/Aptfile &amp;&amp; apti
 $ inxi --basic
 </code></pre>
 <p>Show Screen/Montior Information</p>
@@ -614,7 +614,7 @@ $ inxi --basic
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"System Information","level":"1.9","depth":1,"next":{"title":"CLI Basics","level":"1.10","depth":1,"path":"cli-basics.md","ref":"cli-basics.md","articles":[]},"previous":{"title":"tldr","level":"1.8","depth":1,"path":"tldr.md","ref":"tldr.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"system-information.md","mtime":"2025-07-03T17:53:21.864Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T17:53:29.827Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"System Information","level":"1.9","depth":1,"next":{"title":"CLI Basics","level":"1.10","depth":1,"path":"cli-basics.md","ref":"cli-basics.md","articles":[]},"previous":{"title":"tldr","level":"1.8","depth":1,"path":"tldr.md","ref":"tldr.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"system-information.md","mtime":"2025-07-03T18:04:58.781Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-03T18:05:03.771Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -692,7 +692,7 @@ $ inxi --basic
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

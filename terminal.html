@@ -6,7 +6,7 @@
         <title>terminal · Ubuntu for Development</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 3.7.5">
+        <meta name="generator" content="HonKit 6.0.3">
         <meta name="author" content="Richard Davis <rdavis.bacs@gmail.com>">
         
         
@@ -28,7 +28,7 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -539,21 +539,21 @@
 <h3 id="install-oh-my-bash">Install <code>oh-my-bash</code></h3>
 <p>Open <code>gnome-terminal</code> via the shortcut <code>Ctrl+Alt+T</code>, or via the Ubuntu launcher, press <code>Win</code> then type <code>terminal</code>.</p>
 <p>Install <code>curl</code> and <code>git</code>.</p>
-<pre><code class="lang-bash">$ sudo apt update
-$ sudo apt install curl git
+<pre><code class="lang-bash">$ <span class="hljs-built_in">sudo</span> apt update
+$ <span class="hljs-built_in">sudo</span> apt install curl git
 </code></pre>
 <p>Install <code>oh-my-bash</code>. [<a href="https://github.com/ohmybash/oh-my-bash#basic-installation" target="_blank">instructions</a>]</p>
-<pre><code class="lang-bash">$ bash -c <span class="hljs-string">&quot;<span class="hljs-subst">$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)</span>&quot;</span>
+<pre><code class="lang-bash">$ bash -c <span class="hljs-string">"<span class="hljs-subst">$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)</span>"</span>
 </code></pre>
 <p>Set the theme for <code>oh-my-bash</code>.</p>
 <pre><code class="lang-bash"><span class="hljs-comment"># ~/.bashrc</span>
-OSH_THEME=<span class="hljs-string">&quot;powerline&quot;</span>
+OSH_THEME=<span class="hljs-string">"powerline"</span>
 </code></pre>
 <h3 id="create-a-keyboard-shortcut-to-open-gnome-terminal-full-screen">Create a keyboard shortcut to open <code>gnome-terminal</code> full-screen</h3>
 <ol>
-<li>Press Super, type &apos;keyboard&apos; or &apos;keyboard shortcuts&apos;, press Enter</li>
+<li>Press Super, type 'keyboard' or 'keyboard shortcuts', press Enter</li>
 <li>Add a new Custom Shortcut.<ul>
-<li>Title: &quot;Full screen terminal&quot;</li>
+<li>Title: "Full screen terminal"</li>
 <li>Command: <code>/usr/bin/gnome-terminal --full-screen</code></li>
 </ul>
 </li>
@@ -603,7 +603,7 @@ OSH_THEME=<span class="hljs-string">&quot;powerline&quot;</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"terminal","level":"1.5","depth":1,"next":{"title":"aliases","level":"1.6","depth":1,"path":"aliases.md","ref":"aliases.md","articles":[]},"previous":{"title":"Gnome","level":"1.4","depth":1,"path":"gnome.md","ref":"gnome.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"terminal.md","mtime":"2025-07-03T17:53:21.865Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2025-07-03T17:53:29.827Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"terminal","level":"1.5","depth":1,"next":{"title":"aliases","level":"1.6","depth":1,"path":"aliases.md","ref":"aliases.md","articles":[]},"previous":{"title":"Gnome","level":"1.4","depth":1,"path":"gnome.md","ref":"gnome.md","articles":[]},"dir":"ltr"},"config":{"plugins":["gitbook-plugin-include-codeblock","gitbook-plugin-ace"],"root":"./src","styles":{"website":"styles/website.css","epub":"styles/epub.css"},"pluginsConfig":{"gitbook-plugin-include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"gitbook-plugin-ace":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Richard Davis <rdavis.bacs@gmail.com>","honkit":">= 3.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ubuntu for Development","language":"en","gitbook":"*","description":"How to get a development environment up and running on Ubuntu"},"file":{"path":"terminal.md","mtime":"2025-07-03T18:04:58.781Z","type":"markdown"},"gitbook":{"version":"6.0.3","time":"2025-07-03T18:05:03.771Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -681,7 +681,7 @@ OSH_THEME=<span class="hljs-string">&quot;powerline&quot;</span>
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 
