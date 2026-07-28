@@ -4,19 +4,16 @@ View a short description of bash commands with examples.
 
 ### Install
 
-Install the tldr bash client. [[repo](https://gitlab.com/pepa65/tldr-bash-client)]
+Install the tealdeer bash client.
 
 ```bash
-# add `PATH="$HOME/.local/bin:$PATH"` to `~/.bashrc`
-$ mkdir -p ~/.local/bin
-$ cd ~/.local/bin
-$ curl -OL https://good4.eu/tldr
-$ chmod +x tldr
+$ sudo apt install tealdeer # or echo "tealdeer" >> ~/Aptfile && apti
 ```
 
 ### Usage
 
 ```bash
+$ tldr --update
 $ tldr --help
 $ tldr tar
 $ tldr apt

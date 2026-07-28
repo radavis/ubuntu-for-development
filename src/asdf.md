@@ -7,22 +7,30 @@ An extensible Version Manager.
 [[source](https://asdf-vm.com/guide/getting-started.html)]
 
 ```bash
-$ ASDF_VERSION=0.18.0
-$ curl -OL https://github.com/asdf-vm/asdf/releases/download/v${ASDF_VERSION}/asdf-v${ASDF_VERSION}-linux-amd64.tar.gz
+$ ASDF_VERSION=0.20.0
+$ curl -OL  https://github.com/asdf-vm/asdf/releases/download/v${ASDF_VERSION}/asdf-v${ASDF_VERSION}-linux-amd64.tar.gz
 $ curl -OL https://github.com/asdf-vm/asdf/releases/download/v${ASDF_VERSION}/asdf-v${ASDF_VERSION}-linux-amd64.tar.gz.md5
 # the output of md5sum and the contents of the md5 file should match.
 $ md5sum asdf-v${ASDF_VERSION}-linux-amd64.tar.gz.md5
-$ tar xf asdf-v${ASDF_VERSION}-linux-amd64.tar.gz
-$ mv asdf ~/.local/bin
+$ tar zxvf asdf-v${ASDF_VERSION}-linux-amd64.tar.gz
+$ mv asdf ~/.local/bin/
 ```
 
-Then, set configuration in `~/.basrc`.
+Then, set configuration in `~/.bashrc`.
 
 ```bash
 # ~/.bashrc
 $ export PATH="$HOME/.local/bin:$PATH"
 $ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 $ . <(asdf completion bash)
+```
+
+Test your installation.
+
+```bash
+$ which asdf
+$ asdf -v
+```
 
 ### Add plugins for languages, tools, and install
 
