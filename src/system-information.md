@@ -31,6 +31,7 @@ Show RAM Usage
 ```bash
 $ free -m  # in megabytes
 $ htop
+$ btop
 ```
 
 Show Disk Usage
@@ -60,8 +61,8 @@ $ ip addr show
 Get System Hardware Information
 
 ```bash
-$ echo "inxi" >> ~/Aptfile && apti
 $ inxi --basic
+$ fastfetch
 ```
 
 Show Screen/Montior Information

@@ -2,30 +2,6 @@
 
 `gnome-terminal` is the default terminal application in Ubuntu.
 
-### Install `oh-my-bash`
-
-Open `gnome-terminal` via the shortcut `Ctrl+Alt+T`, or via the Ubuntu launcher, press `Win` then type `terminal`.
-
-Install `curl` and `git`.
-
-```bash
-$ sudo apt update
-$ sudo apt install curl git
-```
-
-Install `oh-my-bash`. [[instructions](https://github.com/ohmybash/oh-my-bash#basic-installation)]
-
-```bash
-$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-```
-
-Set the theme for `oh-my-bash`.
-
-```bash
-# ~/.bashrc
-OSH_THEME="powerline"
-```
-
 ### Create a keyboard shortcut to open `gnome-terminal` full-screen
 
 1. Press Super, type 'keyboard' or 'keyboard shortcuts', press Enter

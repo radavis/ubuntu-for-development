@@ -1,8 +1,8 @@
 {
   "honkit": ">= 3.0.0",
   "title": "Ubuntu for Development",
-  "description": "How to get a development environment up and running on Ubuntu",
-  "author": "Richard Davis <rdavis.bacs@gmail.com>",
+  "description": "How to get a development environment up and running on Ubuntu.",
+  "author": "Richard Davis <someone@example.com>",
   "language": "en",
   "root": "./src",
   "plugins": [

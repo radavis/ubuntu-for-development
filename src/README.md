@@ -1,6 +1,6 @@
 ## Ubuntu for Development
 
-![juiced-up terminal](assets/images/tmux-plus-nano-50.png)
+![juiced-up terminal](assets/images/tmux-plus-nano.png)
 
 How to get a development environment up and running on Ubuntu.
 

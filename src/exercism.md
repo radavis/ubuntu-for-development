@@ -10,9 +10,9 @@ Download and extract the exercism cli
 $ cd ~
 $ mkdir -p exercism/cli
 $ cd exercism/cli
-$ EXERCISM_VERSION=3.3.0
+$ EXERCISM_VERSION=3.5.8
 $ curl -OL https://github.com/exercism/cli/releases/download/v$EXERCISM_VERSION/exercism-$EXERCISM_VERSION-linux-x86_64.tar.gz
-$ tar -zxvf exercism-$EXERCISM_VERSION-linux-x86_64.tar.gz
+$ tar zxvf exercism-$EXERCISM_VERSION-linux-x86_64.tar.gz
 ```
 
 Add the `exercism` command to your `$PATH`

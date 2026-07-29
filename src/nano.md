@@ -1,16 +1,11 @@
 ## nano
 
-Build and install `nano`.
+`nano` is an Ubuntu/Debian-provided text editor.
 
 ```bash
-$ cd ~
-$ NANO_VERSION=8.0
-$ curl -O https://nano-editor.org/dist/v8/nano-$NANO_VERSION.tar.gz
-$ tar -zxvf nano-$NANO_VERSION.tar.gz
-$ cd nano-$NANO_VERSION
-$ ./configure
-$ make
-$ sudo make install
+$ which nano
+# /usr/bin/nano
+$ nano --version
 ```
 
 ### Configuration
@@ -35,12 +30,7 @@ set trimblanks
 ### Syntax Highlighting
 
 ```bash
-$ cd ~/nano-$NANO_VERSION/syntax
-$ sudo make install
-```
-
-```bash
 # ~/.nanorc
-include /usr/local/share/nano/*.nanorc
-include /usr/local/share/nano/extra/*.nanorc
+include /usr/share/nano/*.nanorc
+include /usr/share/nano/extra/*.nanorc
 ```
