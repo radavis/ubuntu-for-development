@@ -8,13 +8,13 @@ $ mkdir postgres && cd postgres
 $ touch .env docker-compose.yml
 ```
 
-```
+```bash
 # .env
 POSTGRES_VERSION=18.4
 POSTGRES_PASSWORD=p0stgr3s
 ```
 
-```
+```yaml
 # docker-compose.yml
 services:
   db:

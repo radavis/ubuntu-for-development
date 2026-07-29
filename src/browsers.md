@@ -20,7 +20,7 @@ $ which firefox
 
 ## LibreWolf
 
-[[instructions](https://www.librewolf.net/installation/debian/)
+[[instructions](https://www.librewolf.net/installation/debian/)]
 
 ```bash
 $ which extrepo
@@ -30,3 +30,9 @@ $ sudo extrepo enable librewolf
 $ sudo apt update
 $ sudo apt install librewolf
 ```
+
+### Browser Extensions
+
+- [OneTab](one-tab.com)
+- [uBlock Origin](ublockorigin.com)
+- [ohmyguus/i-still-dont-care-about-cookies](https://github.com/ohmyguus/i-still-dont-care-about-cookies#readme)

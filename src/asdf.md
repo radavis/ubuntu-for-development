@@ -46,7 +46,6 @@ Read how to
 of a language with `asdf`.
 
 ```bash
-
 # fall-back to .nvmrc, .ruby-version, et al. when .tool-versions is not present
 echo 'legacy_version_file = yes' > ~/.asdfrc
 ```

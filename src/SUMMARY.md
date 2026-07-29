@@ -3,7 +3,6 @@
 * [Update OS](update-os.md)
 * [Gnome](gnome.md)
 * [Browsers](browsers.md)
-* [Browser Extensions](browser-extensions.md)
 * [terminal](terminal.md)
 * [aliases](aliases.md)
 * [apt](apt.md)

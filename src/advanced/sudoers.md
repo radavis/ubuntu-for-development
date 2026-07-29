@@ -7,7 +7,7 @@ $ sudo !!
 $ sudo nano /etc/sudoers.d/${USER}
 ```
 
-```
+```bash
 your-username ALL=(ALL) NOPASSWD: ALL
 ```
 
