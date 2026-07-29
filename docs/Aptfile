@@ -1,0 +1,10 @@
+btop
+build-essential
+curl
+fastfetch
+git
+inxi
+libffi-dev
+libncurses-dev
+tree
+xclip
