@@ -14,8 +14,8 @@ Create a new ruby (on rails) project.
 ```bash
 $ mkdir new-rails-project && cd $_
 # set language versions
-$ asdf local ruby latest
-$ asdf local nodejs latest # if necessary
+$ asdf set ruby latest
+$ asdf set nodejs latest # if necessary
 # see bundler.io/gemfile.html
 $ gem install bundler
 $ bundle init # gives you a Gemfile
