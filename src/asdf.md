@@ -11,7 +11,8 @@ $ ASDF_VERSION=0.20.0
 $ curl -OL  https://github.com/asdf-vm/asdf/releases/download/v${ASDF_VERSION}/asdf-v${ASDF_VERSION}-linux-amd64.tar.gz
 $ curl -OL https://github.com/asdf-vm/asdf/releases/download/v${ASDF_VERSION}/asdf-v${ASDF_VERSION}-linux-amd64.tar.gz.md5
 # the output of md5sum and the contents of the md5 file should match.
-$ md5sum asdf-v${ASDF_VERSION}-linux-amd64.tar.gz.md5
+$ md5sum asdf-v${ASDF_VERSION}-linux-amd64.tar.gz
+$ cat asdf-v${ASDF_VERSION}-linux-amd64.tar.gz.md5
 $ tar zxvf asdf-v${ASDF_VERSION}-linux-amd64.tar.gz
 $ mv asdf ~/.local/bin/
 ```
@@ -37,7 +38,7 @@ $ asdf -v
 ```bash
 $ asdf plugin add nodejs
 $ asdf install nodejs latest
-$ asdf global nodejs latest
+$ asdf set nodejs latest
 $ node --version
 ```
 
