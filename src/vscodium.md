@@ -12,44 +12,22 @@ $ cd ~/Downloads
 $ sudo dpkg -i codium_$VERSION_amd64.deb
 ```
 
-### Configure Extensions Source
-
-Create and edit `~/.config/VSCodium/product.json`
-
-```json
-{
-  "extensionsGallery": {
-    "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
-    "cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",
-    "itemUrl": "https://marketplace.visualstudio.com/items",
-    "controlUrl": "",
-    "recommendationsUrl": ""
-  }
-}
-```
-
-[[source](https://github.com/VSCodium/vscodium/blob/master/DOCS.md#extensions--marketplace)]
-
 ### Configuration
 
+Here are some of my configuration preferences for this editor.
+
+File: ` ~/.config/VSCodium/User/settings.json`
+
 ```json
 {
-  "keyboard.dispatch": "keyCode",
   "editor.minimap.enabled": false,
   "editor.rulers": [80],
-  "files.trimTrailingWhitespace": true,
-  "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false,
   "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "keyboard.dispatch": "keyCode",
   "window.menuBarVisibility": "toggle",
-  "editorconfig.generateAuto": false,
-  "workbench.startupEditor": "none",
-  "window.zoomLevel": 1,
-  "workbench.editor.enablePreview": false,
-  "explorer.autoReveal": false,
-  "editor.detectIndentation": false,
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "window.title": "${activeEditorLong}${separator}${rootName}"
+  "window.title": "${activeEditorLong}${separator}${rootName}",
+  "workbench.editor.enablePreview": false
 }
 ```

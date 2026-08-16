@@ -21,9 +21,11 @@ Add a few useful aliases to `~/.alias`.
 ```bash
 alias ga="git add" # usage: ga filename
 alias gc="git commit -m" # usage: gc "commit message"
+alias gd="git diff"
 alias gs="git status" # usage: gs
 alias gr="git reset"
 alias grh="git reset --hard HEAD"
+alias push="git push origin HEAD"
 ```
 
 Other `git` configuration commands:
