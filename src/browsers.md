@@ -36,3 +36,4 @@ $ sudo apt install librewolf
 - [OneTab](http://one-tab.com)
 - [uBlock Origin](http://ublockorigin.com)
 - [ohmyguus/i-still-dont-care-about-cookies](https://github.com/ohmyguus/i-still-dont-care-about-cookies#readme)
+- [openstyles/stylus](https://github.com/openstyles/stylus)
