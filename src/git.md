@@ -20,6 +20,7 @@ Add a few useful aliases to `~/.alias`.
 
 ```bash
 alias ga="git add" # usage: ga filename
+alias gb="git branch"
 alias gc="git commit -m" # usage: gc "commit message"
 alias gd="git diff"
 alias gs="git status" # usage: gs
